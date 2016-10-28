@@ -6,8 +6,9 @@
 //  Copyright © 2016年 com.ews. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "NHBaseViewController.h"
+
 @class NHServiceListModel;
-@interface NHHomeViewController : UIViewController
+@interface NHHomeViewController : NHBaseViewController
 @property (nonatomic, strong) NSArray *models;
 @end

@@ -13,11 +13,11 @@
 #import "NHCommonConstant.h"
 #import "UIImageView+WebCache.h"
 #import "NHDefaultHeader.h"
-//#import "UIView+Frame.h"
+#import "UIView+Frame.h"
 #import "Masonry.h"
 #import "NHCommonAPIConstant.h"
 //#import "NHBaseImageView.h"
-//#import "UINavigationItem+NHAddition.h"
-//#import "MBProgressHUD+NHAddition.h"
+#import "UINavigationItem+NHAddition.h"
+#import "MBProgressHUD+NHAddition.h"
 
 #endif /* NhDuanziPrefixHeader_pch */

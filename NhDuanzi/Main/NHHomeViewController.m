@@ -9,29 +9,62 @@
 #import "NHHomeViewController.h"
 
 @interface NHHomeViewController ()
-
+@property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *controllers;
+@property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *urls;
 @end
 
 @implementation NHHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setUpItems];
+}
+
+-(void)setUpViews{
+    if (self.titles.count==0) {
+        return;
+    }
+    if (self.titles.count!=self.urls.count) {
+        return;
+    }
+    for (int i=0; i<self.urls.count; i++) {
+        NSString *url = self.urls[i];
+        NSString *title = self.titles[i];
+        if ([title isEqualToString:@"游戏"]) {
+            
+        }
+    }
+}
+
+-(void)setUpItems{
+    WeakSelf(weakSelf);
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
+}
+- (NSMutableArray *)controllers {
+    if (!_controllers) {
+        _controllers = [NSMutableArray array];
+    }
+    return _controllers;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSMutableArray *)titles {
+    if (!_titles) {
+        _titles = [NSMutableArray new];
+    }
+    return _titles;
 }
-*/
 
+- (NSMutableArray *)urls {
+    if (!_urls) {
+        _urls = [NSMutableArray new];
+    }
+    return _urls;
+}
 @end
