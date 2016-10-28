@@ -7,7 +7,15 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UMSocialSnsService.h"
+#import <UMSocialData.h>
+#import "UMSocialWechatHandler.h"
+#import "UMSocialQQHandler.h"
+#import "UMSocialSinaSSOHandler.h"
+#import "NHNeiHanShareManager.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import "NHMainTabbarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +24,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[NHNeiHanShareManager sharedManage]registerAllPlatForms];
+    [AMapServices sharedServices].apiKey=@"ed78efbeface6d3dc1a04a6cd0f82f75";
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    NHMainTabbarViewController *tarbar=[[NHMainTabbarViewController alloc]init];
+    self.window.rootViewController=tarbar;
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [UMSocialSnsService handleOpenURL:url];
+}
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [UMSocialSnsService handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
