@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		78BBFE3D5BF99D9CB5E51FB4 /* libPods-NhDuanzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9889F1C8029FF6B1E8AE25 /* libPods-NhDuanzi.a */; };
+		823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */; };
+		823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */; };
+		823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */; };
+		823C604A1DC714F8003C19A8 /* NHHomeHeaderOptionalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */; };
+		823C604D1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */; };
 		8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB8C1DC1A36900280E57 /* NHRequestManager.m */; };
 		8253DBB71DC1CC6D00280E57 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB921DC1CC6D00280E57 /* NSNotificationCenter+Addition.m */; };
 		8253DBB81DC1CC6D00280E57 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB951DC1CC6D00280E57 /* NSArray+Addition.m */; };
@@ -96,6 +101,16 @@
 
 /* Begin PBXFileReference section */
 		3B9889F1C8029FF6B1E8AE25 /* libPods-NhDuanzi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NhDuanzi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823C60381DC6D6FE003C19A8 /* NHCustomSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomSlideViewController.h; sourceTree = "<group>"; };
+		823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomSlideViewController.m; sourceTree = "<group>"; };
+		823C603C1DC6F347003C19A8 /* NHHomeAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionViewController.h; sourceTree = "<group>"; };
+		823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionViewController.m; sourceTree = "<group>"; };
+		823C60431DC6F423003C19A8 /* NHHomeAttentionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionRequest.h; sourceTree = "<group>"; };
+		823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionRequest.m; sourceTree = "<group>"; };
+		823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeHeaderOptionalView.h; sourceTree = "<group>"; };
+		823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeHeaderOptionalView.m; sourceTree = "<group>"; };
+		823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeHeaderOptionalViewItemView.h; sourceTree = "<group>"; };
+		823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeHeaderOptionalViewItemView.m; sourceTree = "<group>"; };
 		8253DB8B1DC1A36900280E57 /* NHRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHRequestManager.h; sourceTree = "<group>"; };
 		8253DB8C1DC1A36900280E57 /* NHRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHRequestManager.m; sourceTree = "<group>"; };
 		8253DB911DC1CC6D00280E57 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
@@ -270,6 +285,76 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		823C60371DC6D6D7003C19A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				823C60381DC6D6FE003C19A8 /* NHCustomSlideViewController.h */,
+				823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		823C603B1DC6F2E3003C19A8 /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				823C60421DC6F3EF003C19A8 /* View */,
+				823C60411DC6F3E1003C19A8 /* Request */,
+				823C60401DC6F3D1003C19A8 /* Model */,
+				823C603F1DC6F3C0003C19A8 /* Controller */,
+				823C603C1DC6F347003C19A8 /* NHHomeAttentionViewController.h */,
+				823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */,
+			);
+			name = Attention;
+			sourceTree = "<group>";
+		};
+		823C603F1DC6F3C0003C19A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		823C60401DC6F3D1003C19A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		823C60411DC6F3E1003C19A8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				823C60431DC6F423003C19A8 /* NHHomeAttentionRequest.h */,
+				823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		823C60421DC6F3EF003C19A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		823C60461DC714DA003C19A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		823C60471DC714E5003C19A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */,
+				823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */,
+				823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */,
+				823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		8253DB8E1DC1CC5B00280E57 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +478,7 @@
 		8253DBE11DC1EA4E00280E57 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				823C60371DC6D6D7003C19A8 /* Controller */,
 				8253DBE21DC1EA7300280E57 /* View */,
 			);
 			name = Custom;
@@ -745,6 +831,7 @@
 		82DD98A11DC08F5D00982DFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				823C603B1DC6F2E3003C19A8 /* Attention */,
 				82879EEE1DC19B0800D87620 /* Main */,
 			);
 			path = Home;
@@ -760,6 +847,8 @@
 		82DD98A31DC08F5D00982DFD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				823C60471DC714E5003C19A8 /* View */,
+				823C60461DC714DA003C19A8 /* Model */,
 				82879EF51DC19BC500D87620 /* Request */,
 				82879EDB1DC18C3B00D87620 /* Controller */,
 			);
@@ -1016,6 +1105,7 @@
 				82879EE51DC1968F00D87620 /* NHDiscoverViewController.m in Sources */,
 				827197191DC345F400B8EAB9 /* UIViewController+Addition.m in Sources */,
 				8253DBB91DC1CC6D00280E57 /* NSDate+Addition.m in Sources */,
+				823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */,
 				8271970C1DC345F400B8EAB9 /* UILabel+CountDown.m in Sources */,
 				8253DBC51DC1CC6D00280E57 /* NSString+Size.m in Sources */,
 				82879EEB1DC196A400D87620 /* NHMessageViewController.m in Sources */,
@@ -1030,6 +1120,7 @@
 				82DD98AB1DC08FFD00982DFD /* NHNeiHanShareManager.m in Sources */,
 				827197141DC345F400B8EAB9 /* MBProgressHUD+NHAddition.m in Sources */,
 				82879EFC1DC19C6700D87620 /* NHBaseRequest.m in Sources */,
+				823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */,
 				8253DBD71DC1E13A00280E57 /* NHServiceListModel.m in Sources */,
 				8253DBC21DC1CC6D00280E57 /* NSString+Addition.m in Sources */,
 				82879EF81DC19BEA00D87620 /* NHServiceListRequest.m in Sources */,
@@ -1046,10 +1137,12 @@
 				8253DBE01DC1E7A500280E57 /* NHFileCacheManager.m in Sources */,
 				8271970F1DC345F400B8EAB9 /* UIImage+ImageEffects.m in Sources */,
 				8253DBCF1DC1DE2C00280E57 /* NHCommonAPIConstant.m in Sources */,
+				823C604D1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m in Sources */,
 				8271970E1DC345F400B8EAB9 /* UIImage+Cut.m in Sources */,
 				827196DD1DC3344B00B8EAB9 /* NHCustomNoNetworkEmptyView.m in Sources */,
 				8253DBC01DC1CC6D00280E57 /* NSObject+Runtime.m in Sources */,
 				827197131DC345F400B8EAB9 /* UINavigationItem+NHAddition.m in Sources */,
+				823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */,
 				8253DBBF1DC1CC6D00280E57 /* NSObject+GCD.m in Sources */,
 				8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */,
 				827197151DC345F400B8EAB9 /* UILabel+Addition.m in Sources */,
@@ -1069,6 +1162,7 @@
 				8271970A1DC345F400B8EAB9 /* UIBarButtonItem+Addition.m in Sources */,
 				827197111DC345F400B8EAB9 /* UIImageView+LBBlurredImage.m in Sources */,
 				8271970B1DC345F400B8EAB9 /* UIButton+Addition.m in Sources */,
+				823C604A1DC714F8003C19A8 /* NHHomeHeaderOptionalView.m in Sources */,
 				8253DBB81DC1CC6D00280E57 /* NSArray+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,14 @@
 //
 
 #import "NHHomeViewController.h"
-
+#import "NHCustomSegmentView.h"
+#import "NHCustomSlideViewController.h"
+#import "NHHomeHeaderOptionalView.h"
+#import "NHHomeAttentionViewController.h"
 @interface NHHomeViewController ()
+@property (nonatomic, weak) NHCustomSlideViewController *slideViewController;
+@property (nonatomic, weak) NHHomeAttentionViewController *attentionController;
+@property (nonatomic, weak) NHHomeHeaderOptionalView *optionalView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *controllers;
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -40,8 +46,32 @@
 
 -(void)setUpItems{
     WeakSelf(weakSelf);
+    NHCustomSegmentView *segment=[[NHCustomSegmentView alloc]initWithItemTitles:@[@"精选",@"关注"]];
+    self.navigationItem.titleView=segment;
+    segment.frame=CGRectMake(0, 0, 130, 35);
+    [segment clickDefault];
+    segment.NHCustomSegmentViewBtnClickHand=^(NHCustomSegmentView *segment, NSString *title, NSInteger currentIndex) {
+        BOOL isFeatured = (currentIndex == 0);
+        weakSelf.optionalView.hidden = weakSelf.slideViewController.view.hidden = !isFeatured;
+        weakSelf.attentionController.view.hidden =  isFeatured;
+    };
+
+    
     
 }
+
+-(NHHomeHeaderOptionalView*)optionalView{
+    if (!_optionalView) {
+        
+    }
+}
+
+//-(NHCustomSlideViewController*)slideViewController{
+//    if (!) {
+//        
+//    }
+//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
