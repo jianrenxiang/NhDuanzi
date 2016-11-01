@@ -1,4 +1,4 @@
-//
+	//
 //  NHHomeViewController.m
 //  NhDuanzi
 //
@@ -11,7 +11,10 @@
 #import "NHCustomSlideViewController.h"
 #import "NHHomeHeaderOptionalView.h"
 #import "NHHomeAttentionViewController.h"
-@interface NHHomeViewController ()
+#import "NHServiceListModel.h"
+#import "NHCustomWebViewController.h"
+#import "NHHomeBaseViewController.h"
+@interface NHHomeViewController ()<NHCustomSlideViewControllerDataSource,NHCustomSlideViewControllerDelegate>
 @property (nonatomic, weak) NHCustomSlideViewController *slideViewController;
 @property (nonatomic, weak) NHHomeAttentionViewController *attentionController;
 @property (nonatomic, weak) NHHomeHeaderOptionalView *optionalView;
@@ -27,7 +30,22 @@
     [super viewDidLoad];
     [self setUpItems];
 }
-
+// 设置数据
+- (void)setModels:(NSArray <NHServiceListModel *> *)models {
+    if (models.count == 0) {
+        return ;
+    }
+    for (NHServiceListModel *model in models) {
+        if ([model.name isKindOfClass:[NSString class]]) {
+            [self.titles addObject:model.name];
+        }
+        if ([model.url isKindOfClass:[NSString class]]) {
+            [self.urls addObject:model.url];
+        }
+    }
+    // 设置子视图
+    [self setUpViews];
+}
 -(void)setUpViews{
     if (self.titles.count==0) {
         return;
@@ -39,9 +57,23 @@
         NSString *url = self.urls[i];
         NSString *title = self.titles[i];
         if ([title isEqualToString:@"游戏"]) {
+            NHCustomWebViewController *controller = [[NHCustomWebViewController alloc] initWithUrl:url];
+            [self.controllers addObject:controller];
+        }else if ([title isEqualToString:@"精华"]){
             
+        }else{
+
         }
     }
+    if ([self.titles containsObject:@"精华"]) {
+        [self.titles removeObject:@"精华"];
+    }
+    WeakSelf(weakSelf);
+    self.optionalView.titles = self.titles.copy;
+    self.optionalView.homeHeaderOptionalViewItemClickHandle = ^(NHHomeHeaderOptionalView *view, NSString *currentTitle, NSInteger currentIndex) {
+        weakSelf.slideViewController.seletedIndex = currentIndex;
+    };
+    [self.slideViewController reloadData];
 }
 
 -(void)setUpItems{
@@ -55,23 +87,47 @@
         weakSelf.optionalView.hidden = weakSelf.slideViewController.view.hidden = !isFeatured;
         weakSelf.attentionController.view.hidden =  isFeatured;
     };
-
+    
     
     
 }
 
 -(NHHomeHeaderOptionalView*)optionalView{
     if (!_optionalView) {
+        NHHomeHeaderOptionalView *optional=[[NHHomeHeaderOptionalView alloc]init];
+        optional.frame=CGRectMake(0, 0, kScreenWidth, 40);
+        [self.view addSubview:optional];
+        _optionalView=optional;
+        _optionalView.backgroundColor=kWhiteColor;
         
     }
+    return _optionalView;
 }
 
-//-(NHCustomSlideViewController*)slideViewController{
-//    if (!) {
-//        
-//    }
-//}
+-(NHCustomSlideViewController*)slideViewController{
+    if (!_slideViewController) {
+        NHCustomSlideViewController *slide=[[NHCustomSlideViewController alloc]init];
+        [slide willMoveToParentViewController:self];
+        [self.view addSubview:slide.view];
+        slide.view.frame=CGRectMake(0, self.optionalView.height, kScreenWidth, kScreenHeight-self.optionalView.height-kTopBarHeight-kTabBarHeight);
+        slide.dataSource=self;
+        slide.delgate=self;
+        _slideViewController=slide;
+    }
+    return _slideViewController;
+}
 
+-(NHHomeAttentionViewController*)attentionController{
+    if (!_attentionController) {
+        NHHomeAttentionViewController *attention=[[NHHomeAttentionViewController alloc]init];
+        [attention willMoveToParentViewController:self];
+        [self addChildViewController:attention];
+        [self.view addSubview:attention.view];
+        attention.view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight - kNavigationBarHeight - kTabBarHeight);
+        _attentionController = attention;
+    }
+    return _attentionController;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
