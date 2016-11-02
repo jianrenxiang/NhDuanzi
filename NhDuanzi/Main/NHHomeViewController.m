@@ -14,7 +14,12 @@
 #import "NHServiceListModel.h"
 #import "NHCustomWebViewController.h"
 #import "NHHomeBaseViewController.h"
+#import "NHHomeUserIconView.h"
+#import "NHUserInfoManager.h"
+#import "NHLoginViewController.h"
+#import "NHHomeBaseViewController.h"
 @interface NHHomeViewController ()<NHCustomSlideViewControllerDataSource,NHCustomSlideViewControllerDelegate>
+@property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, weak) NHCustomSlideViewController *slideViewController;
 @property (nonatomic, weak) NHHomeAttentionViewController *attentionController;
 @property (nonatomic, weak) NHHomeHeaderOptionalView *optionalView;
@@ -62,7 +67,9 @@
         }else if ([title isEqualToString:@"精华"]){
             
         }else{
-
+            NHHomeBaseViewController *homeBase=[[NHHomeBaseViewController alloc]initWithUrl:url];
+            [self.controllers addObject:homeBase];
+            
         }
     }
     if ([self.titles containsObject:@"精华"]) {
@@ -87,11 +94,33 @@
         weakSelf.optionalView.hidden = weakSelf.slideViewController.view.hidden = !isFeatured;
         weakSelf.attentionController.view.hidden =  isFeatured;
     };
-    
-    
+    NHHomeUserIconView *iconView=[[NHHomeUserIconView alloc]init];
+    iconView.frame=CGRectMake(-10, 0, 35, 35);
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:iconView];
+    iconView.homeUserIconViewDidClickHandle=^(NHHomeUserIconView *iconView){
+        [weakSelf leftItemClick];
+    };
+    if (![NHUserInfoManager sharedManager].isLogin) {
+        iconView.image = [UIImage imageNamed:@"defaulthead"];
+    } else {
+        iconView.iconUrl = [NHUserInfoManager sharedManager].currentUserInfo.avatar_url;
+    }
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"submission"] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
     
 }
+- (void)leftItemClick{
+    if (![NHUserInfoManager sharedManager].isLogin) {
+        NHLoginViewController *loginController = [[NHLoginViewController alloc] init];
+        [self pushVc:loginController];
+    } else {
+//        NHPersonalCenterViewController *personalCenter = [[NHPersonalCenterViewController alloc] initWithUserInfoModel:[[NHUserInfoManager sharedManager] currentUserInfo]];
+//        [self pushVc:personalCenter];
+    }
+}
 
+-(void)rightItemClick{
+    
+}
 -(NHHomeHeaderOptionalView*)optionalView{
     if (!_optionalView) {
         NHHomeHeaderOptionalView *optional=[[NHHomeHeaderOptionalView alloc]init];

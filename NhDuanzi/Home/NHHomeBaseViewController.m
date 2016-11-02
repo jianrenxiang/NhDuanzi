@@ -8,6 +8,18 @@
 
 #import "NHHomeBaseViewController.h"
 
+
+
 @implementation NHHomeBaseViewController
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor=[UIColor redColor];
+}
+-(instancetype)initWithUrl:(NSString *)url{
+    if ([super init]) {
+        NSLog(@"sss");
+    }
+    return self;
+}
 @end

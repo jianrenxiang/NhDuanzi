@@ -16,7 +16,7 @@
 #import "UIView+Frame.h"
 #import "Masonry.h"
 #import "NHCommonAPIConstant.h"
-//#import "NHBaseImageView.h"
+#import "NHBaseImageView.h"
 #import "UINavigationItem+NHAddition.h"
 #import "MBProgressHUD+NHAddition.h"
 

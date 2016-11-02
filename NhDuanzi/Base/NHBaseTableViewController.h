@@ -8,8 +8,20 @@
 
 #import "NHBaseViewController.h"
 
-//typedef void (^NHTableVcCellSelectedHandle)(NHBaseTableViewController);
+typedef void (^NHTableVcCellSelectedHandle)(UITableViewCell *cell,NSIndexPath *indexPath);
 
-@interface NHBaseTableViewController : NHBaseViewController
+typedef NS_ENUM(NSUInteger,NHBaseTableVcRefreshType){
+    /** 无法刷新*/
+    NHBaseTableVcRefreshTypeNone = 0,
+    /** 只能刷新*/
+    NHBaseTableVcRefreshTypeOnlyCanRefresh,
+    /** 只能上拉加载*/
+    NHBaseTableVcRefreshTypeOnlyCanLoadMore,
+    /** 能刷新*/
+    NHBaseTableVcRefreshTypeRefreshAndLoadMore
+};
 
+@interface NHBaseTableViewController : NHBaseViewController<UITableViewDataSource,UITableViewDelegate>{
+    NSMutableArray *dataArray;
+}
 @end
