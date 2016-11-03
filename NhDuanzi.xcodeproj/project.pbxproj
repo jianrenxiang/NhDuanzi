@@ -71,6 +71,7 @@
 		82879EEB1DC196A400D87620 /* NHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EEA1DC196A400D87620 /* NHMessageViewController.m */; };
 		82879EF81DC19BEA00D87620 /* NHServiceListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EF71DC19BEA00D87620 /* NHServiceListRequest.m */; };
 		82879EFC1DC19C6700D87620 /* NHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EFB1DC19C6700D87620 /* NHBaseRequest.m */; };
+		82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A293021DCACBFD00C77EAE /* NHBaseTableView.m */; };
 		82DD986B1DC04CC300982DFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD986A1DC04CC300982DFD /* main.m */; };
 		82DD986E1DC04CC300982DFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD986D1DC04CC300982DFD /* AppDelegate.m */; };
 		82DD98711DC04CC300982DFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD98701DC04CC300982DFD /* ViewController.m */; };
@@ -234,6 +235,8 @@
 		82879EF71DC19BEA00D87620 /* NHServiceListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHServiceListRequest.m; sourceTree = "<group>"; };
 		82879EFA1DC19C6700D87620 /* NHBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseRequest.h; sourceTree = "<group>"; };
 		82879EFB1DC19C6700D87620 /* NHBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseRequest.m; sourceTree = "<group>"; };
+		82A293011DCACBFD00C77EAE /* NHBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseTableView.h; sourceTree = "<group>"; };
+		82A293021DCACBFD00C77EAE /* NHBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableView.m; sourceTree = "<group>"; };
 		82DD98661DC04CC300982DFD /* NhDuanzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhDuanzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DD986A1DC04CC300982DFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82DD986C1DC04CC300982DFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -953,6 +956,8 @@
 		82E755241DC8749400324786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82A293011DCACBFD00C77EAE /* NHBaseTableView.h */,
+				82A293021DCACBFD00C77EAE /* NHBaseTableView.m */,
 				82E755251DC874D300324786 /* NHBaseTableViewCell.h */,
 				82E755261DC874D300324786 /* NHBaseTableViewCell.m */,
 				82E3B1871DC9789F00198846 /* NHBaseImageView.h */,
@@ -1213,6 +1218,7 @@
 				82E3B1951DC9C4F400198846 /* NHAnimationManager.m in Sources */,
 				827197151DC345F400B8EAB9 /* UILabel+Addition.m in Sources */,
 				8253DBC61DC1CC6D00280E57 /* NSString+URL.m in Sources */,
+				82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */,
 				8253DBCC1DC1D8DA00280E57 /* NHUtils.m in Sources */,
 				8253DBDA1DC1E26200280E57 /* NHUserInfoManager.m in Sources */,
 				8271971D1DC348F300B8EAB9 /* NHCustomWebViewController.m in Sources */,
