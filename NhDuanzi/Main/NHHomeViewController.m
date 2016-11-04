@@ -137,6 +137,7 @@
     if (!_slideViewController) {
         NHCustomSlideViewController *slide=[[NHCustomSlideViewController alloc]init];
         [slide willMoveToParentViewController:self];
+        [self addChildViewController:slide];
         [self.view addSubview:slide.view];
         slide.view.frame=CGRectMake(0, self.optionalView.height, kScreenWidth, kScreenHeight-self.optionalView.height-kTopBarHeight-kTabBarHeight);
         slide.dataSource=self;
@@ -158,6 +159,15 @@
     return _attentionController;
 }
 
+- (NSInteger)numberOfChildViewControllersInSlideViewController:(NHCustomSlideViewController *)slideViewController {
+    return self.titles.count;
+}
+- (UIViewController *)slideViewController:(NHCustomSlideViewController *)slideViewController viewControllerAtIndex:(NSInteger)index {
+    return self.controllers[index];
+}
+- (void)customSlideViewController:(NHCustomSlideViewController *)slideViewController slideOffset:(CGPoint)slideOffset {
+    self.optionalView.contentOffset = slideOffset;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
    

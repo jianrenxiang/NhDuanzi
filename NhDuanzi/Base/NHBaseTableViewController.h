@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger,NHBaseTableVcRefreshType){
 };
 
 @interface NHBaseTableViewController : NHBaseViewController<UITableViewDataSource,UITableViewDelegate>{
-    NSMutableArray *dataArray;
+    NSMutableArray *_dataArray;
 }
 /** 刚才执行的是刷新*/
 @property (nonatomic, assign) NSInteger isRefresh;
@@ -116,7 +116,6 @@ typedef NS_ENUM(NSUInteger,NHBaseTableVcRefreshType){
 /** 某个分组的cell数量*/
 - (NSInteger)nh_numberOfRowsInSection:(NSInteger)section;
 
-#pragma weak---
 /** 某行的cell*/
 - (NHBaseTableViewCell *)nh_cellAtIndexPath:(NSIndexPath *)indexPath;
 

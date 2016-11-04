@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		78BBFE3D5BF99D9CB5E51FB4 /* libPods-NhDuanzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9889F1C8029FF6B1E8AE25 /* libPods-NhDuanzi.a */; };
+		820A0FB31DCC1DE7005F1486 /* NHHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FB21DCC1DE7005F1486 /* NHHomeTableViewCell.m */; };
+		820A0FB61DCC27D8005F1486 /* NHHomeTableViewCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FB51DCC27D8005F1486 /* NHHomeTableViewCellFrame.m */; };
+		820A0FB91DCC306F005F1486 /* NHHomeServiceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FB81DCC306F005F1486 /* NHHomeServiceDataModel.m */; };
+		820A0FBC1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FBB1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.m */; };
+		820A0FC01DCC59A5005F1486 /* NHHomeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FBF1DCC59A5005F1486 /* NHHomeListRequest.m */; };
+		820A0FC51DCC5C34005F1486 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 820A0FC21DCC5C34005F1486 /* WMPlayer.bundle */; };
+		820A0FC61DCC5C34005F1486 /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FC41DCC5C34005F1486 /* WMPlayer.m */; };
+		820A0FC91DCC5DC2005F1486 /* NHHomeTopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A0FC81DCC5DC2005F1486 /* NHHomeTopTipView.m */; };
 		823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */; };
 		823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */; };
 		823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */; };
@@ -90,6 +98,18 @@
 		82E755231DC8733000324786 /* NHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E755221DC8733000324786 /* NHBaseTableViewController.m */; };
 		82E755271DC874D300324786 /* NHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E755261DC874D300324786 /* NHBaseTableViewCell.m */; };
 		82E7552B1DC88BFB00324786 /* NHHomeUserIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E7552A1DC88BFB00324786 /* NHHomeUserIconView.m */; };
+		82F695791DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695781DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.m */; };
+		82F6957C1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6957B1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m */; };
+		82F6957F1DCC70F000EC4F67 /* NHDownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6957E1DCC70F000EC4F67 /* NHDownloadImageManager.m */; };
+		82F695821DCC713C00EC4F67 /* NHCustomGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695811DCC713C00EC4F67 /* NHCustomGifImageView.m */; };
+		82F695851DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695841DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.m */; };
+		82F695941DCC817900EC4F67 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695881DCC817900EC4F67 /* MJPhoto.m */; };
+		82F695951DCC817900EC4F67 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 82F695891DCC817900EC4F67 /* MJPhotoBrowser.bundle */; };
+		82F695961DCC817900EC4F67 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6958B1DCC817900EC4F67 /* MJPhotoBrowser.m */; };
+		82F695971DCC817900EC4F67 /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6958D1DCC817900EC4F67 /* MJPhotoLoadingView.m */; };
+		82F695981DCC817900EC4F67 /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6958F1DCC817900EC4F67 /* MJPhotoProgressView.m */; };
+		82F695991DCC817900EC4F67 /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695911DCC817900EC4F67 /* MJPhotoToolbar.m */; };
+		82F6959A1DCC817900EC4F67 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F695931DCC817900EC4F67 /* MJPhotoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +131,21 @@
 
 /* Begin PBXFileReference section */
 		3B9889F1C8029FF6B1E8AE25 /* libPods-NhDuanzi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NhDuanzi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		820A0FB11DCC1DE7005F1486 /* NHHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTableViewCell.h; sourceTree = "<group>"; };
+		820A0FB21DCC1DE7005F1486 /* NHHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTableViewCell.m; sourceTree = "<group>"; };
+		820A0FB41DCC27D8005F1486 /* NHHomeTableViewCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTableViewCellFrame.h; sourceTree = "<group>"; };
+		820A0FB51DCC27D8005F1486 /* NHHomeTableViewCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTableViewCellFrame.m; sourceTree = "<group>"; };
+		820A0FB71DCC306F005F1486 /* NHHomeServiceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeServiceDataModel.h; sourceTree = "<group>"; };
+		820A0FB81DCC306F005F1486 /* NHHomeServiceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeServiceDataModel.m; sourceTree = "<group>"; };
+		820A0FBA1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTableViewCellCommentView.h; sourceTree = "<group>"; };
+		820A0FBB1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTableViewCellCommentView.m; sourceTree = "<group>"; };
+		820A0FBE1DCC59A5005F1486 /* NHHomeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeListRequest.h; sourceTree = "<group>"; };
+		820A0FBF1DCC59A5005F1486 /* NHHomeListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeListRequest.m; sourceTree = "<group>"; };
+		820A0FC21DCC5C34005F1486 /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
+		820A0FC31DCC5C34005F1486 /* WMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
+		820A0FC41DCC5C34005F1486 /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
+		820A0FC71DCC5DC2005F1486 /* NHHomeTopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTopTipView.h; sourceTree = "<group>"; };
+		820A0FC81DCC5DC2005F1486 /* NHHomeTopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTopTipView.m; sourceTree = "<group>"; };
 		823C60381DC6D6FE003C19A8 /* NHCustomSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomSlideViewController.h; sourceTree = "<group>"; };
 		823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomSlideViewController.m; sourceTree = "<group>"; };
 		823C603C1DC6F347003C19A8 /* NHHomeAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionViewController.h; sourceTree = "<group>"; };
@@ -275,6 +310,29 @@
 		82E755261DC874D300324786 /* NHBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableViewCell.m; sourceTree = "<group>"; };
 		82E755291DC88BFB00324786 /* NHHomeUserIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeUserIconView.h; sourceTree = "<group>"; };
 		82E7552A1DC88BFB00324786 /* NHHomeUserIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeUserIconView.m; sourceTree = "<group>"; };
+		82F695771DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchCommonCellFrame.h; sourceTree = "<group>"; };
+		82F695781DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchCommonCellFrame.m; sourceTree = "<group>"; };
+		82F6957A1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTableViewCellGifImageView.h; sourceTree = "<group>"; };
+		82F6957B1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTableViewCellGifImageView.m; sourceTree = "<group>"; };
+		82F6957D1DCC70F000EC4F67 /* NHDownloadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDownloadImageManager.h; sourceTree = "<group>"; };
+		82F6957E1DCC70F000EC4F67 /* NHDownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDownloadImageManager.m; sourceTree = "<group>"; };
+		82F695801DCC713C00EC4F67 /* NHCustomGifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomGifImageView.h; sourceTree = "<group>"; };
+		82F695811DCC713C00EC4F67 /* NHCustomGifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomGifImageView.m; sourceTree = "<group>"; };
+		82F695831DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeTableCellVideoCoverImageView.h; sourceTree = "<group>"; };
+		82F695841DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeTableCellVideoCoverImageView.m; sourceTree = "<group>"; };
+		82F695871DCC817900EC4F67 /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		82F695881DCC817900EC4F67 /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		82F695891DCC817900EC4F67 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		82F6958A1DCC817900EC4F67 /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		82F6958B1DCC817900EC4F67 /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		82F6958C1DCC817900EC4F67 /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		82F6958D1DCC817900EC4F67 /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		82F6958E1DCC817900EC4F67 /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		82F6958F1DCC817900EC4F67 /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		82F695901DCC817900EC4F67 /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		82F695911DCC817900EC4F67 /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		82F695921DCC817900EC4F67 /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		82F695931DCC817900EC4F67 /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
 		BF403E81BC38C98EE43CC916 /* Pods-NhDuanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhDuanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NhDuanzi/Pods-NhDuanzi.release.xcconfig"; sourceTree = "<group>"; };
 		E619FD40D0C2844BA7B9619F /* Pods-NhDuanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhDuanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NhDuanzi/Pods-NhDuanzi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -313,6 +371,25 @@
 				3B9889F1C8029FF6B1E8AE25 /* libPods-NhDuanzi.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		820A0FBD1DCC5983005F1486 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				820A0FBE1DCC59A5005F1486 /* NHHomeListRequest.h */,
+				820A0FBF1DCC59A5005F1486 /* NHHomeListRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		820A0FC11DCC5C34005F1486 /* WMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				820A0FC21DCC5C34005F1486 /* WMPlayer.bundle */,
+				820A0FC31DCC5C34005F1486 /* WMPlayer.h */,
+				820A0FC41DCC5C34005F1486 /* WMPlayer.m */,
+			);
+			path = WMPlayer;
 			sourceTree = "<group>";
 		};
 		823C60371DC6D6D7003C19A8 /* Controller */ = {
@@ -501,6 +578,10 @@
 			children = (
 				8253DBD51DC1E13A00280E57 /* NHServiceListModel.h */,
 				8253DBD61DC1E13A00280E57 /* NHServiceListModel.m */,
+				820A0FB41DCC27D8005F1486 /* NHHomeTableViewCellFrame.h */,
+				820A0FB51DCC27D8005F1486 /* NHHomeTableViewCellFrame.m */,
+				820A0FB71DCC306F005F1486 /* NHHomeServiceDataModel.h */,
+				820A0FB81DCC306F005F1486 /* NHHomeServiceDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -529,6 +610,8 @@
 				8271971F1DC34CBF00B8EAB9 /* NHCustomSegmentView.m */,
 				82E3B18D1DC9930600198846 /* NHCustomAlertView.h */,
 				82E3B18E1DC9930600198846 /* NHCustomAlertView.m */,
+				82F695801DCC713C00EC4F67 /* NHCustomGifImageView.h */,
+				82F695811DCC713C00EC4F67 /* NHCustomGifImageView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -625,6 +708,8 @@
 		82879ED31DC18AC700D87620 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				82F695861DCC817900EC4F67 /* MJPhotoBrowser */,
+				820A0FC11DCC5C34005F1486 /* WMPlayer */,
 				82E3B1901DC9B51300198846 /* FXBlurView.h */,
 				82E3B1911DC9B51300198846 /* FXBlurView.m */,
 				82879ED41DC18AF200D87620 /* AMapFoundationKit.framework */,
@@ -672,6 +757,7 @@
 		82879EEE1DC19B0800D87620 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				820A0FBD1DCC5983005F1486 /* Request */,
 				82E755281DC88BC100324786 /* View */,
 				8253DBD41DC1E10000280E57 /* Model */,
 				82879EF31DC19B5200D87620 /* Controller */,
@@ -863,6 +949,7 @@
 		82DD98A01DC08F5D00982DFD /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				82F695751DCC6FD200EC4F67 /* Search */,
 				82879EED1DC19B0200D87620 /* Main */,
 			);
 			path = Discover;
@@ -933,6 +1020,8 @@
 		82DD98A81DC08FCC00982DFD /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				82F6957D1DCC70F000EC4F67 /* NHDownloadImageManager.h */,
+				82F6957E1DCC70F000EC4F67 /* NHDownloadImageManager.m */,
 				8253DBDE1DC1E7A500280E57 /* NHFileCacheManager.h */,
 				8253DBDF1DC1E7A500280E57 /* NHFileCacheManager.m */,
 				8253DBD81DC1E26200280E57 /* NHUserInfoManager.h */,
@@ -971,8 +1060,55 @@
 			children = (
 				82E755291DC88BFB00324786 /* NHHomeUserIconView.h */,
 				82E7552A1DC88BFB00324786 /* NHHomeUserIconView.m */,
+				820A0FB11DCC1DE7005F1486 /* NHHomeTableViewCell.h */,
+				820A0FB21DCC1DE7005F1486 /* NHHomeTableViewCell.m */,
+				820A0FBA1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.h */,
+				820A0FBB1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.m */,
+				820A0FC71DCC5DC2005F1486 /* NHHomeTopTipView.h */,
+				820A0FC81DCC5DC2005F1486 /* NHHomeTopTipView.m */,
+				82F6957A1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.h */,
+				82F6957B1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m */,
+				82F695831DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.h */,
+				82F695841DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		82F695751DCC6FD200EC4F67 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				82F695761DCC6FDE00EC4F67 /* Model */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		82F695761DCC6FDE00EC4F67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82F695771DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.h */,
+				82F695781DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82F695861DCC817900EC4F67 /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				82F695871DCC817900EC4F67 /* MJPhoto.h */,
+				82F695881DCC817900EC4F67 /* MJPhoto.m */,
+				82F695891DCC817900EC4F67 /* MJPhotoBrowser.bundle */,
+				82F6958A1DCC817900EC4F67 /* MJPhotoBrowser.h */,
+				82F6958B1DCC817900EC4F67 /* MJPhotoBrowser.m */,
+				82F6958C1DCC817900EC4F67 /* MJPhotoLoadingView.h */,
+				82F6958D1DCC817900EC4F67 /* MJPhotoLoadingView.m */,
+				82F6958E1DCC817900EC4F67 /* MJPhotoProgressView.h */,
+				82F6958F1DCC817900EC4F67 /* MJPhotoProgressView.m */,
+				82F695901DCC817900EC4F67 /* MJPhotoToolbar.h */,
+				82F695911DCC817900EC4F67 /* MJPhotoToolbar.m */,
+				82F695921DCC817900EC4F67 /* MJPhotoView.h */,
+				82F695931DCC817900EC4F67 /* MJPhotoView.m */,
+			);
+			path = MJPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		B354B1B8BF199A2468369724 /* Pods */ = {
@@ -1090,9 +1226,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820A0FC51DCC5C34005F1486 /* WMPlayer.bundle in Resources */,
 				82DD98791DC04CC300982DFD /* LaunchScreen.storyboard in Resources */,
 				82DD98761DC04CC300982DFD /* Assets.xcassets in Resources */,
 				82DD98741DC04CC300982DFD /* Main.storyboard in Resources */,
+				82F695951DCC817900EC4F67 /* MJPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,17 +1310,25 @@
 				82E755231DC8733000324786 /* NHBaseTableViewController.m in Sources */,
 				82879EE51DC1968F00D87620 /* NHDiscoverViewController.m in Sources */,
 				827197191DC345F400B8EAB9 /* UIViewController+Addition.m in Sources */,
+				82F695971DCC817900EC4F67 /* MJPhotoLoadingView.m in Sources */,
 				8253DBB91DC1CC6D00280E57 /* NSDate+Addition.m in Sources */,
 				823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */,
 				8271970C1DC345F400B8EAB9 /* UILabel+CountDown.m in Sources */,
 				8253DBC51DC1CC6D00280E57 /* NSString+Size.m in Sources */,
 				82879EEB1DC196A400D87620 /* NHMessageViewController.m in Sources */,
+				82F695851DCC785300EC4F67 /* NHHomeTableCellVideoCoverImageView.m in Sources */,
 				82E3B1891DC9789F00198846 /* NHBaseImageView.m in Sources */,
+				82F695981DCC817900EC4F67 /* MJPhotoProgressView.m in Sources */,
 				8253DBBD1DC1CC6D00280E57 /* NSObject+AppInfo.m in Sources */,
 				82E3B18C1DC98CE200198846 /* NHLoginViewController.m in Sources */,
 				827197171DC345F400B8EAB9 /* UIView+Layer.m in Sources */,
+				820A0FBC1DCC3D58005F1486 /* NHHomeTableViewCellCommentView.m in Sources */,
+				82F695791DCC6FFB00EC4F67 /* NHDiscoverSearchCommonCellFrame.m in Sources */,
+				820A0FC61DCC5C34005F1486 /* WMPlayer.m in Sources */,
+				82F6957F1DCC70F000EC4F67 /* NHDownloadImageManager.m in Sources */,
 				8271970D1DC345F400B8EAB9 /* UIImage+Addition.m in Sources */,
 				8253DBE81DC1FF3100280E57 /* NHBaseViewController.m in Sources */,
+				82F6959A1DCC817900EC4F67 /* MJPhotoView.m in Sources */,
 				8253DBDD1DC1E75600280E57 /* NHNeiHanUserInfoModel.m in Sources */,
 				8253DBE51DC1EA9300280E57 /* NHRefreshFooter.m in Sources */,
 				8253DBBB1DC1CC6D00280E57 /* NSFileManager+Paths.m in Sources */,
@@ -1190,6 +1336,7 @@
 				82DD98AB1DC08FFD00982DFD /* NHNeiHanShareManager.m in Sources */,
 				827197141DC345F400B8EAB9 /* MBProgressHUD+NHAddition.m in Sources */,
 				82879EFC1DC19C6700D87620 /* NHBaseRequest.m in Sources */,
+				820A0FC91DCC5DC2005F1486 /* NHHomeTopTipView.m in Sources */,
 				823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */,
 				8253DBD71DC1E13A00280E57 /* NHServiceListModel.m in Sources */,
 				8253DBC21DC1CC6D00280E57 /* NSString+Addition.m in Sources */,
@@ -1211,22 +1358,31 @@
 				8271970E1DC345F400B8EAB9 /* UIImage+Cut.m in Sources */,
 				827196DD1DC3344B00B8EAB9 /* NHCustomNoNetworkEmptyView.m in Sources */,
 				8253DBC01DC1CC6D00280E57 /* NSObject+Runtime.m in Sources */,
+				82F6957C1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m in Sources */,
+				82F695941DCC817900EC4F67 /* MJPhoto.m in Sources */,
+				820A0FB31DCC1DE7005F1486 /* NHHomeTableViewCell.m in Sources */,
 				827197131DC345F400B8EAB9 /* UINavigationItem+NHAddition.m in Sources */,
 				823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */,
 				8253DBBF1DC1CC6D00280E57 /* NSObject+GCD.m in Sources */,
+				82F695961DCC817900EC4F67 /* MJPhotoBrowser.m in Sources */,
+				820A0FB61DCC27D8005F1486 /* NHHomeTableViewCellFrame.m in Sources */,
 				8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */,
+				82F695821DCC713C00EC4F67 /* NHCustomGifImageView.m in Sources */,
 				82E3B1951DC9C4F400198846 /* NHAnimationManager.m in Sources */,
 				827197151DC345F400B8EAB9 /* UILabel+Addition.m in Sources */,
 				8253DBC61DC1CC6D00280E57 /* NSString+URL.m in Sources */,
 				82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */,
 				8253DBCC1DC1D8DA00280E57 /* NHUtils.m in Sources */,
 				8253DBDA1DC1E26200280E57 /* NHUserInfoManager.m in Sources */,
+				820A0FB91DCC306F005F1486 /* NHHomeServiceDataModel.m in Sources */,
+				82F695991DCC817900EC4F67 /* MJPhotoToolbar.m in Sources */,
 				8271971D1DC348F300B8EAB9 /* NHCustomWebViewController.m in Sources */,
 				8253DBB71DC1CC6D00280E57 /* NSNotificationCenter+Addition.m in Sources */,
 				8253DBC11DC1CC6D00280E57 /* NSAttributedString+Size.m in Sources */,
 				82E7552B1DC88BFB00324786 /* NHHomeUserIconView.m in Sources */,
 				8253DBD31DC1E0C800280E57 /* NHBaseModel.m in Sources */,
 				8253DBBC1DC1CC6D00280E57 /* NSObject+AddProperty.m in Sources */,
+				820A0FC01DCC59A5005F1486 /* NHHomeListRequest.m in Sources */,
 				827197201DC34CBF00B8EAB9 /* NHCustomSegmentView.m in Sources */,
 				82E755201DC872C700324786 /* NHHomeBaseViewController.m in Sources */,
 				82879EDF1DC18F7D00D87620 /* NHBaseNavigationViewController.m in Sources */,
