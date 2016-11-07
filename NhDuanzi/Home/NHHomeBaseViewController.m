@@ -18,8 +18,12 @@
 #import "NHHomeTableViewCellFrame.h"
 #import "NHHomeTableViewCell.h"
 #import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
+#import "NHDiscoverTopicViewController.h"
+#import "NHHomeDynamicRequest.h"
+#import "NHHomeNeiHanShareView.h"
 #define kTipTopViewH 30
-@interface NHHomeBaseViewController ()
+@interface NHHomeBaseViewController ()<NHHomeTableViewCellDelegate,WMPlayerDelegate>
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, strong) NHBaseRequest *request;
 @property (nonatomic, strong) NSMutableArray *cellFrameArray;
@@ -51,8 +55,8 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor redColor];
-    self.needCellSepLine=YES;
+
+    self.needCellSepLine=NO;
     self.showRefreshIcon=YES;
     self.refreshType=NHBaseTableVcRefreshTypeRefreshAndLoadMore;
     [self showLoadingAnimation];
@@ -276,8 +280,8 @@
 }
 
 - (void)homeTableViewCell:(NHHomeTableViewCell *)cell gotoPersonalCenterWithUserInfo:(NHNeiHanUserInfoModel *)userInfoModel {
-    NHPersonalCenterViewController *personalCenter = [[NHPersonalCenterViewController alloc] initWithUserInfoModel:userInfoModel];
-    [self pushVc:personalCenter];
+//    NHPersonalCenterViewController *personalCenter = [[NHPersonalCenterViewController alloc] initWithUserInfoModel:userInfoModel];
+//    [self pushVc:personalCenter];
 }
 
 - (void)requestActionWithActionname:(NSString *)actionname indexPath:(NSIndexPath *)indexPath {
@@ -287,7 +291,7 @@
     request.group_id = cellFrame.model.group.ID;
     request.nh_url = kNHHomeDynamicLikeAPI;
     request.action = actionname;
-    [request nh_sendRequestWithCompletion:^(id response, BOOL success, NSString *message) {
+    [request nh_sendRequeseWithCompletion:^(id response, BOOL success, NSString *message) {
         if (success) {
             // 指针不变，只需要更换值
             NHHomeTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
@@ -329,18 +333,17 @@
         case NHHomeTableViewCellItemTypeComment: {
             
             // 跳转
-            NHDynamicDetailViewController *controller = [[NHDynamicDetailViewController alloc] initWithCellFrame:cellFrame];
-            [self pushVc:controller];
+//            NHDynamicDetailViewController *controller = [[NHDynamicDetailViewController alloc] initWithCellFrame:cellFrame];
+//            [self pushVc:controller];
         } break;
             
         case NHHomeTableViewCellItemTypeShare: {
             NHHomeNeiHanShareView *share = [NHHomeNeiHanShareView shareViewWithType:NHHomeNeiHanShareViewTypeShowCopyAndCollect hasRepinFlag:cellFrame.model.group.user_repin];
             [share showInView:self.view];
             [share setUpItemClickHandle:^(NHHomeNeiHanShareView *shareView, NSString *title, NSInteger index, NHNeiHanShareType shareType) {
-                [[NHNeiHanShareManager sharedManager] shareWithSharedType:shareType image:nil url:@"www.baidu.com" content:@"不错" controller:weakSelf];
+                [[NHNeiHanShareManager sharedManage] shareWithSharedType:shareType image:nil url:@"www.baidu.com" content:@"不错" controller:weakSelf];
             }];
-            [share setUpBottomItemClickHandle:^(NHHomeNeiHanShareView *shareView, NSString *title, NSInteger index) {
-                
+            [share setUpBottomItemClickHandle:^(NHHomeNeiHanShareView *shareView, NSString *title, NSInteger index) {  
                 switch (index) {
                     case 0: {
                         NSString *shareUrl = cellFrame.model.group.share_url;
@@ -354,9 +357,9 @@
                     } break;
                         
                     case 2: {
-                        NHDynamicDetailReportViewController *controller = [[NHDynamicDetailReportViewController alloc] init];
-                        NHBaseNavigationViewController *nav = [[NHBaseNavigationViewController alloc] initWithRootViewController:controller];
-                        [self presentVc:nav];
+//                        NHDynamicDetailReportViewController *controller = [[NHDynamicDetailReportViewController alloc] init];
+//                        NHBaseNavigationViewController *nav = [[NHBaseNavigationViewController alloc] initWithRootViewController:controller];
+//                        [self presentVc:nav];
                     } break;
                         
                     default:
@@ -599,21 +602,6 @@
 
 - (void)wmplayerFinishedPlay:(WMPlayer *)wmplayer {
     [self releaseWMPlayer];
-}
-
-- (void)releaseWMPlayer {
-    [wmPlayer pause];
-    [wmPlayer removeFromSuperview];
-    [wmPlayer.playerLayer removeFromSuperlayer];
-    [wmPlayer.player replaceCurrentItemWithPlayerItem:nil];
-    wmPlayer.player = nil;
-    wmPlayer.currentItem = nil;
-    //释放定时器，否侧不会调用WMPlayer中的dealloc方法
-    [wmPlayer.autoDismissTimer invalidate];
-    wmPlayer.autoDismissTimer = nil;
-    wmPlayer.playOrPauseBtn = nil;
-    wmPlayer.playerLayer = nil;
-    wmPlayer = nil;
 }
 
 - (NSMutableArray *)cellFrameArray {
