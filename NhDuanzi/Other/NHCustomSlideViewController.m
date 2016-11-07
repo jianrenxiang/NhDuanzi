@@ -72,7 +72,7 @@
 }
 
 -(void)scrollViewDidScroll:(UIScrollView*)scrollView{
-    NSInteger currentPage=scrollView.contentOffset.x/kScreenWidth;
+    NSInteger currentPage=scrollView.contentOffset.x/self.view.frame.size.width;
     NSInteger start=currentPage==0?currentPage:(currentPage);
     NSInteger end=(currentPage==[self childViewControllerCount]-1)?currentPage:(currentPage);
     for (NSInteger index=start; index<=end; index++) {
@@ -119,6 +119,8 @@
             UIViewController *viewController=[self.dataSource slideViewController:self viewControllerAtIndex:index];
             [self addChildViewController:viewController atIndex:index];
         }
+    }else {
+        [self addChildViewController:viewController atIndex:index];
     }
 }
 

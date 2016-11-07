@@ -18,6 +18,8 @@
 #import "NHUserInfoManager.h"
 #import "NHLoginViewController.h"
 #import "NHHomeBaseViewController.h"
+#import "NHPersonalCenterViewController.h"
+#import "NHPublishDraftViewController.h"
 @interface NHHomeViewController ()<NHCustomSlideViewControllerDataSource,NHCustomSlideViewControllerDelegate>
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, weak) NHCustomSlideViewController *slideViewController;
@@ -113,13 +115,14 @@
         NHLoginViewController *loginController = [[NHLoginViewController alloc] init];
         [self pushVc:loginController];
     } else {
-//        NHPersonalCenterViewController *personalCenter = [[NHPersonalCenterViewController alloc] initWithUserInfoModel:[[NHUserInfoManager sharedManager] currentUserInfo]];
-//        [self pushVc:personalCenter];
+        NHPersonalCenterViewController *personalCenter = [[NHPersonalCenterViewController alloc] initWithUserInfoModel:[[NHUserInfoManager sharedManager] currentUserInfo]];
+        [self pushVc:personalCenter];
     }
 }
 
 -(void)rightItemClick{
-    
+    NHPublishDraftViewController *publish = [[NHPublishDraftViewController alloc] init];
+    [self pushVc:publish];
 }
 -(NHHomeHeaderOptionalView*)optionalView{
     if (!_optionalView) {

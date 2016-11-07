@@ -70,7 +70,7 @@
     tip.textColor=kCommonBlackColor;
     
     UILabel *contentLabel=[[UILabel alloc]init];
-    NSMutableAttributedString *attrbutedText=[[NSMutableAttributedString alloc]initWithAttributedString:kValidStr(self.title.length ? self.title : @"")];
+    NSMutableAttributedString *attrbutedText=[[NSMutableAttributedString alloc]initWithString:kValidStr(self.title.length ? self.title : @"")];
     [attrbutedText addAttribute:NSForegroundColorAttributeName value:[kCommonBlackColor colorWithAlphaComponent:0.8] range:NSMakeRange(0,self.title.length)];
     NSMutableParagraphStyle *style=[[NSMutableParagraphStyle alloc]init];
     style.lineSpacing=5;
