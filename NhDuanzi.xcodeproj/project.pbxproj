@@ -22,7 +22,6 @@
 		8233EF011DD029A40054AE13 /* NHHomeNeiHanShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8233EF001DD029A40054AE13 /* NHHomeNeiHanShareView.m */; };
 		8233EF041DD065550054AE13 /* NHPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8233EF031DD065550054AE13 /* NHPersonalCenterViewController.m */; };
 		8233EF161DD0735F0054AE13 /* NHPublishDraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8233EF151DD0735F0054AE13 /* NHPublishDraftViewController.m */; };
-		8233EF191DD07BB60054AE13 /* NHHomeAttentionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8233EF181DD07BB60054AE13 /* NHHomeAttentionRequest.m */; };
 		823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */; };
 		823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */; };
 		823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */; };
@@ -87,6 +86,13 @@
 		82879EF81DC19BEA00D87620 /* NHServiceListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EF71DC19BEA00D87620 /* NHServiceListRequest.m */; };
 		82879EFC1DC19C6700D87620 /* NHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EFB1DC19C6700D87620 /* NHBaseRequest.m */; };
 		82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A293021DCACBFD00C77EAE /* NHBaseTableView.m */; };
+		82CC7B711DD167D000796FD2 /* NHHomeAttentionEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B701DD167D000796FD2 /* NHHomeAttentionEmptyView.m */; };
+		82CC7B741DD19E6000796FD2 /* NHCustomCommonEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B731DD19E6000796FD2 /* NHCustomCommonEmptyView.m */; };
+		82CC7B7A1DD1AA2100796FD2 /* NHUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B791DD1AA2100796FD2 /* NHUserInfoViewController.m */; };
+		82CC7B811DD1B73300796FD2 /* NHPersonalCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B801DD1B73300796FD2 /* NHPersonalCenterHeaderView.m */; };
+		82CC7B851DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B841DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m */; };
+		82CC7B881DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B871DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m */; };
+		82CC7B8B1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B8A1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m */; };
 		82DD986B1DC04CC300982DFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD986A1DC04CC300982DFD /* main.m */; };
 		82DD986E1DC04CC300982DFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD986D1DC04CC300982DFD /* AppDelegate.m */; };
 		82DD98711DC04CC300982DFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD98701DC04CC300982DFD /* ViewController.m */; };
@@ -161,12 +167,10 @@
 		8233EEFD1DD027F70054AE13 /* NHHomeDynamicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeDynamicRequest.m; sourceTree = "<group>"; };
 		8233EEFF1DD029A40054AE13 /* NHHomeNeiHanShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeNeiHanShareView.h; sourceTree = "<group>"; };
 		8233EF001DD029A40054AE13 /* NHHomeNeiHanShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeNeiHanShareView.m; sourceTree = "<group>"; };
-		8233EF021DD065550054AE13 /* NHPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterViewController.h; sourceTree = "<group>"; };
-		8233EF031DD065550054AE13 /* NHPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPersonalCenterViewController.m; sourceTree = "<group>"; };
+		8233EF021DD065550054AE13 /* NHPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHPersonalCenterViewController.h; path = ../Home/NHPersonalCenterViewController.h; sourceTree = "<group>"; };
+		8233EF031DD065550054AE13 /* NHPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHPersonalCenterViewController.m; path = ../Home/NHPersonalCenterViewController.m; sourceTree = "<group>"; };
 		8233EF141DD0735F0054AE13 /* NHPublishDraftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishDraftViewController.h; sourceTree = "<group>"; };
 		8233EF151DD0735F0054AE13 /* NHPublishDraftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishDraftViewController.m; sourceTree = "<group>"; };
-		8233EF171DD07BB60054AE13 /* NHHomeAttentionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionRequest.h; sourceTree = "<group>"; };
-		8233EF181DD07BB60054AE13 /* NHHomeAttentionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionRequest.m; sourceTree = "<group>"; };
 		823C60381DC6D6FE003C19A8 /* NHCustomSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomSlideViewController.h; sourceTree = "<group>"; };
 		823C60391DC6D6FE003C19A8 /* NHCustomSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomSlideViewController.m; sourceTree = "<group>"; };
 		823C603C1DC6F347003C19A8 /* NHHomeAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionViewController.h; sourceTree = "<group>"; };
@@ -293,6 +297,21 @@
 		82879EFB1DC19C6700D87620 /* NHBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseRequest.m; sourceTree = "<group>"; };
 		82A293011DCACBFD00C77EAE /* NHBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseTableView.h; sourceTree = "<group>"; };
 		82A293021DCACBFD00C77EAE /* NHBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableView.m; sourceTree = "<group>"; };
+		82CC7B6F1DD167D000796FD2 /* NHHomeAttentionEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionEmptyView.h; sourceTree = "<group>"; };
+		82CC7B701DD167D000796FD2 /* NHHomeAttentionEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionEmptyView.m; sourceTree = "<group>"; };
+		82CC7B721DD19E6000796FD2 /* NHCustomCommonEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomCommonEmptyView.h; sourceTree = "<group>"; };
+		82CC7B731DD19E6000796FD2 /* NHCustomCommonEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomCommonEmptyView.m; sourceTree = "<group>"; };
+		82CC7B781DD1AA2100796FD2 /* NHUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHUserInfoViewController.h; sourceTree = "<group>"; };
+		82CC7B791DD1AA2100796FD2 /* NHUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHUserInfoViewController.m; sourceTree = "<group>"; };
+		82CC7B7F1DD1B73300796FD2 /* NHPersonalCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterHeaderView.h; sourceTree = "<group>"; };
+		82CC7B801DD1B73300796FD2 /* NHPersonalCenterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPersonalCenterHeaderView.m; sourceTree = "<group>"; };
+		82CC7B821DD1B7ED00796FD2 /* NHPersonalCenterHeaderConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterHeaderConstant.h; sourceTree = "<group>"; };
+		82CC7B831DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterHeaderCountView.h; sourceTree = "<group>"; };
+		82CC7B841DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPersonalCenterHeaderCountView.m; sourceTree = "<group>"; };
+		82CC7B861DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterSectionHeaderView.h; sourceTree = "<group>"; };
+		82CC7B871DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPersonalCenterSectionHeaderView.m; sourceTree = "<group>"; };
+		82CC7B891DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseTableHeaderFooterView.h; sourceTree = "<group>"; };
+		82CC7B8A1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableHeaderFooterView.m; sourceTree = "<group>"; };
 		82DD98661DC04CC300982DFD /* NhDuanzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhDuanzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DD986A1DC04CC300982DFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82DD986C1DC04CC300982DFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -523,8 +542,6 @@
 		8233EF111DD0730C0054AE13 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				8233EF171DD07BB60054AE13 /* NHHomeAttentionRequest.h */,
-				8233EF181DD07BB60054AE13 /* NHHomeAttentionRequest.m */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -595,6 +612,8 @@
 		823C60421DC6F3EF003C19A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82CC7B6F1DD167D000796FD2 /* NHHomeAttentionEmptyView.h */,
+				82CC7B701DD167D000796FD2 /* NHHomeAttentionEmptyView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -724,6 +743,12 @@
 		8253DBD01DC1E0A000280E57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8253DBD11DC1E0C800280E57 /* NHBaseModel.h */,
+				8253DBD21DC1E0C800280E57 /* NHBaseModel.m */,
+				8253DBDB1DC1E75600280E57 /* NHNeiHanUserInfoModel.h */,
+				8253DBDC1DC1E75600280E57 /* NHNeiHanUserInfoModel.m */,
+				8253DBE61DC1FF3100280E57 /* NHBaseViewController.h */,
+				8253DBE71DC1FF3100280E57 /* NHBaseViewController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -767,6 +792,8 @@
 				82E3B18E1DC9930600198846 /* NHCustomAlertView.m */,
 				82F695801DCC713C00EC4F67 /* NHCustomGifImageView.h */,
 				82F695811DCC713C00EC4F67 /* NHCustomGifImageView.m */,
+				82CC7B721DD19E6000796FD2 /* NHCustomCommonEmptyView.h */,
+				82CC7B731DD19E6000796FD2 /* NHCustomCommonEmptyView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -961,8 +988,6 @@
 				82879EE11DC1967F00D87620 /* NHHomeViewController.m */,
 				82E7551E1DC872C700324786 /* NHHomeBaseViewController.h */,
 				82E7551F1DC872C700324786 /* NHHomeBaseViewController.m */,
-				8233EF021DD065550054AE13 /* NHPersonalCenterViewController.h */,
-				8233EF031DD065550054AE13 /* NHPersonalCenterViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -992,6 +1017,71 @@
 				82879EFB1DC19C6700D87620 /* NHBaseRequest.m */,
 			);
 			name = Request;
+			sourceTree = "<group>";
+		};
+		82CC7B751DD1A8B400796FD2 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				82CC7B771DD1A9D500796FD2 /* Controller */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
+		82CC7B761DD1A8B800796FD2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				82CC7B7D1DD1B68B00796FD2 /* Controller */,
+				82CC7B7E1DD1B68E00796FD2 /* View */,
+				82CC7B7C1DD1B68800796FD2 /* Request */,
+				82CC7B7B1DD1B68500796FD2 /* Model */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		82CC7B771DD1A9D500796FD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82CC7B781DD1AA2100796FD2 /* NHUserInfoViewController.h */,
+				82CC7B791DD1AA2100796FD2 /* NHUserInfoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82CC7B7B1DD1B68500796FD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82CC7B821DD1B7ED00796FD2 /* NHPersonalCenterHeaderConstant.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82CC7B7C1DD1B68800796FD2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82CC7B7D1DD1B68B00796FD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8233EF021DD065550054AE13 /* NHPersonalCenterViewController.h */,
+				8233EF031DD065550054AE13 /* NHPersonalCenterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82CC7B7E1DD1B68E00796FD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82CC7B7F1DD1B73300796FD2 /* NHPersonalCenterHeaderView.h */,
+				82CC7B801DD1B73300796FD2 /* NHPersonalCenterHeaderView.m */,
+				82CC7B831DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.h */,
+				82CC7B841DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m */,
+				82CC7B861DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.h */,
+				82CC7B871DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		82DD985D1DC04CC300982DFD = {
@@ -1084,12 +1174,6 @@
 			children = (
 				82E755241DC8749400324786 /* View */,
 				8253DBD01DC1E0A000280E57 /* Model */,
-				8253DBD11DC1E0C800280E57 /* NHBaseModel.h */,
-				8253DBD21DC1E0C800280E57 /* NHBaseModel.m */,
-				8253DBDB1DC1E75600280E57 /* NHNeiHanUserInfoModel.h */,
-				8253DBDC1DC1E75600280E57 /* NHNeiHanUserInfoModel.m */,
-				8253DBE61DC1FF3100280E57 /* NHBaseViewController.h */,
-				8253DBE71DC1FF3100280E57 /* NHBaseViewController.m */,
 				82879EF91DC19BFE00D87620 /* Request */,
 				82879EDC1DC18F5B00D87620 /* Controller */,
 			);
@@ -1165,6 +1249,8 @@
 		82DD98A61DC08F5D00982DFD /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
+				82CC7B761DD1A8B800796FD2 /* Main */,
+				82CC7B751DD1A8B400796FD2 /* UserInfo */,
 			);
 			path = PersonalCenter;
 			sourceTree = "<group>";
@@ -1212,6 +1298,8 @@
 				82E755261DC874D300324786 /* NHBaseTableViewCell.m */,
 				82E3B1871DC9789F00198846 /* NHBaseImageView.h */,
 				82E3B1881DC9789F00198846 /* NHBaseImageView.m */,
+				82CC7B891DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.h */,
+				82CC7B8A1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1510,6 +1598,7 @@
 				827196E01DC33E2700B8EAB9 /* NHCustomLoadingAnimationView.m in Sources */,
 				827197101DC345F400B8EAB9 /* UIImageView+Addition.m in Sources */,
 				82DD98711DC04CC300982DFD /* ViewController.m in Sources */,
+				82CC7B711DD167D000796FD2 /* NHHomeAttentionEmptyView.m in Sources */,
 				8253DBBE1DC1CC6D00280E57 /* NSObject+AutoCoding.m in Sources */,
 				8271971A1DC345F400B8EAB9 /* UIViewController+Loading.m in Sources */,
 				827197121DC345F400B8EAB9 /* UINavigationBar+Addition.m in Sources */,
@@ -1520,12 +1609,15 @@
 				8253DBE01DC1E7A500280E57 /* NHFileCacheManager.m in Sources */,
 				8271970F1DC345F400B8EAB9 /* UIImage+ImageEffects.m in Sources */,
 				8253DBCF1DC1DE2C00280E57 /* NHCommonAPIConstant.m in Sources */,
+				82CC7B7A1DD1AA2100796FD2 /* NHUserInfoViewController.m in Sources */,
 				823C604D1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m in Sources */,
 				8271970E1DC345F400B8EAB9 /* UIImage+Cut.m in Sources */,
 				827196DD1DC3344B00B8EAB9 /* NHCustomNoNetworkEmptyView.m in Sources */,
 				8253DBC01DC1CC6D00280E57 /* NSObject+Runtime.m in Sources */,
+				82CC7B8B1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m in Sources */,
 				82F6957C1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m in Sources */,
 				82F695941DCC817900EC4F67 /* MJPhoto.m in Sources */,
+				82CC7B881DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m in Sources */,
 				820A0FB31DCC1DE7005F1486 /* NHHomeTableViewCell.m in Sources */,
 				827197131DC345F400B8EAB9 /* UINavigationItem+NHAddition.m in Sources */,
 				823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */,
@@ -1534,8 +1626,10 @@
 				820A0FB61DCC27D8005F1486 /* NHHomeTableViewCellFrame.m in Sources */,
 				8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */,
 				82F695821DCC713C00EC4F67 /* NHCustomGifImageView.m in Sources */,
+				82CC7B741DD19E6000796FD2 /* NHCustomCommonEmptyView.m in Sources */,
 				82E3B1951DC9C4F400198846 /* NHAnimationManager.m in Sources */,
 				827197151DC345F400B8EAB9 /* UILabel+Addition.m in Sources */,
+				82CC7B811DD1B73300796FD2 /* NHPersonalCenterHeaderView.m in Sources */,
 				8253DBC61DC1CC6D00280E57 /* NSString+URL.m in Sources */,
 				8233EF041DD065550054AE13 /* NHPersonalCenterViewController.m in Sources */,
 				82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */,
@@ -1551,10 +1645,10 @@
 				8253DBD31DC1E0C800280E57 /* NHBaseModel.m in Sources */,
 				8253DBBC1DC1CC6D00280E57 /* NSObject+AddProperty.m in Sources */,
 				820A0FC01DCC59A5005F1486 /* NHHomeListRequest.m in Sources */,
-				8233EF191DD07BB60054AE13 /* NHHomeAttentionRequest.m in Sources */,
 				827197201DC34CBF00B8EAB9 /* NHCustomSegmentView.m in Sources */,
 				82E755201DC872C700324786 /* NHHomeBaseViewController.m in Sources */,
 				82879EDF1DC18F7D00D87620 /* NHBaseNavigationViewController.m in Sources */,
+				82CC7B851DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m in Sources */,
 				82DD986B1DC04CC300982DFD /* main.m in Sources */,
 				827197161DC345F400B8EAB9 /* UIView+Frame.m in Sources */,
 				82879EE21DC1967F00D87620 /* NHHomeViewController.m in Sources */,
