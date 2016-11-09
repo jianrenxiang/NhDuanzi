@@ -7,31 +7,66 @@
 //
 
 #import "NHDiscoverTopicViewController.h"
+#import "NHDiscoverTopicRequest.h"
+#import "NHHomeBaseViewController.h"
+#import "NHDiscoverModel.h"
+#import "NHPublishDraftViewController.h"
 
 @interface NHDiscoverTopicViewController ()
-
+@property (nonatomic, assign) NSInteger categoryId;
+@property (nonatomic, strong) NHDiscoverCategoryElement *element;
+@property (nonatomic, strong) NHHomeBaseViewController *controller;
 @end
 
 @implementation NHDiscoverTopicViewController
 
+- (instancetype)initWithCatogoryId:(NSInteger)categoryId {
+    if (self = [super init]) {
+        self.categoryId = categoryId;
+    }
+    return self;
+}
+
+- (instancetype)initWithCategoryElement:(NHDiscoverCategoryElement *)element {
+    if (self = [super init]) {
+        self.element = element;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setUpItems];
+    
+    [self loadData];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setUpItems {
+    if (self.element.name) {
+        self.navigationItem.title = self.element.name;
+    }
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"submission"] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)rightItemClick {
+    NHPublishDraftViewController *publishController = [[NHPublishDraftViewController alloc] init];
+    [self pushVc:publishController];
 }
-*/
+// 请求数据
+- (void)loadData  {
+    [super loadData];
+    NHDiscoverTopicRequest *request = [NHDiscoverTopicRequest nh_request];
+    request.nh_url = kNHHomeCategoryDynamicListAPI;
+    request.count = 30;
+    request.level = 6;
+    request.category_id = self.element ? self.element.ID : self.categoryId;
+    request.message_cursor = 0;
+    request.mpic = 1;
+    NHHomeBaseViewController *controller = [[NHHomeBaseViewController alloc] initWithRequest:request];
+    [self addChildVc:controller];
+    _controller = controller;
+}
 
 @end

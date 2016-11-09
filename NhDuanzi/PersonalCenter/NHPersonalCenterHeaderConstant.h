@@ -15,6 +15,11 @@ typedef NS_ENUM(NSUInteger,NHPersonalCenterHeaderViewItemType){
     NHPersonalCenterHeaderViewItemTypeGotoIntegral,
     NHPersonalCenterHeaderViewItemTypeAvatar
 };
+typedef NS_ENUM(NSUInteger, NHPersonalCenterSectionHeaderViewItemType) {
+    NHPersonalCenterSectionHeaderViewItemTypePublish = 1,
+    NHPersonalCenterSectionHeaderViewItemTypeCol,
+    NHPersonalCenterSectionHeaderViewItemTypeComment
+};
 
 
 #endif /* NHPersonalCenterHeaderConstant_h */

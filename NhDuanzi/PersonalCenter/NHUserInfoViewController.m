@@ -9,7 +9,7 @@
 #import "NHUserInfoViewController.h"
 #import "NHNeiHanUserInfoModel.h"
 #import "NHUserInfoManager.h"
-#import ""
+#import "NHCustomAlertView.h"
 @interface NHUserInfoViewController ()<UIAlertViewDelegate>
 @property (nonatomic, weak) UIImageView *iconImg;
 @property (nonatomic, weak) UILabel *nameL;
