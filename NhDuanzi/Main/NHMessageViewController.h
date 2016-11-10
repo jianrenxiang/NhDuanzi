@@ -6,8 +6,7 @@
 //  Copyright © 2016年 com.ews. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "NHBaseTableViewController.h"
 
-@interface NHMessageViewController : UIViewController
-
+@interface NHMessageViewController : NHBaseTableViewController
 @end

@@ -22,6 +22,8 @@
 #import "NHDiscoverTopicViewController.h"
 #import "NHHomeDynamicRequest.h"
 #import "NHHomeNeiHanShareView.h"
+#import "NHDynamicDetailReportViewController.h"
+#import "NHDynamicDetailViewController.h"
 #define kTipTopViewH 30
 @interface NHHomeBaseViewController ()<NHHomeTableViewCellDelegate,WMPlayerDelegate>
 @property (nonatomic, copy) NSString *url;
@@ -332,9 +334,9 @@
             
         case NHHomeTableViewCellItemTypeComment: {
             
-            // 跳转
-//            NHDynamicDetailViewController *controller = [[NHDynamicDetailViewController alloc] initWithCellFrame:cellFrame];
-//            [self pushVc:controller];
+//             跳转
+            NHDynamicDetailViewController *controller = [[NHDynamicDetailViewController alloc] initWithCellFrame:cellFrame];
+            [self pushVc:controller];
         } break;
             
         case NHHomeTableViewCellItemTypeShare: {
@@ -357,9 +359,9 @@
                     } break;
                         
                     case 2: {
-//                        NHDynamicDetailReportViewController *controller = [[NHDynamicDetailReportViewController alloc] init];
-//                        NHBaseNavigationViewController *nav = [[NHBaseNavigationViewController alloc] initWithRootViewController:controller];
-//                        [self presentVc:nav];
+                        NHDynamicDetailReportViewController *controller = [[NHDynamicDetailReportViewController alloc] init];
+                        NHBaseNavigationViewController *nav = [[NHBaseNavigationViewController alloc] initWithRootViewController:controller];
+                        [self presentVc:nav];
                     } break;
                         
                     default:

@@ -59,6 +59,8 @@
 		824A6E5D1DD3075D003E647A /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824A6E501DD3075D003E647A /* TZPhotoPreviewController.m */; };
 		824A6E5E1DD3075D003E647A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824A6E521DD3075D003E647A /* TZVideoPlayerController.m */; };
 		824A6E5F1DD3075D003E647A /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 824A6E541DD3075D003E647A /* UIView+Layout.m */; };
+		824A6E621DD31F34003E647A /* NHPublishDraftRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 824A6E611DD31F34003E647A /* NHPublishDraftRequest.m */; };
+		824A6E651DD3201F003E647A /* NHCustomTopImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 824A6E641DD3201F003E647A /* NHCustomTopImageButton.m */; };
 		8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB8C1DC1A36900280E57 /* NHRequestManager.m */; };
 		8253DBB71DC1CC6D00280E57 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB921DC1CC6D00280E57 /* NSNotificationCenter+Addition.m */; };
 		8253DBB81DC1CC6D00280E57 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB951DC1CC6D00280E57 /* NSArray+Addition.m */; };
@@ -118,6 +120,46 @@
 		82879EF81DC19BEA00D87620 /* NHServiceListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EF71DC19BEA00D87620 /* NHServiceListRequest.m */; };
 		82879EFC1DC19C6700D87620 /* NHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82879EFB1DC19C6700D87620 /* NHBaseRequest.m */; };
 		82A293031DCACBFD00C77EAE /* NHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A293021DCACBFD00C77EAE /* NHBaseTableView.m */; };
+		82A6C0451DD42463002F5084 /* NHPublishSelectDraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0441DD42463002F5084 /* NHPublishSelectDraftViewController.m */; };
+		82A6C04C1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C04B1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.m */; };
+		82A6C04F1DD42527002F5084 /* NHPublishSelectDraftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C04E1DD42527002F5084 /* NHPublishSelectDraftModel.m */; };
+		82A6C0521DD42565002F5084 /* NHPublishSelectDraftRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0511DD42565002F5084 /* NHPublishSelectDraftRequest.m */; };
+		82A6C05A1DD442FC002F5084 /* NHDiscoverHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0591DD442FC002F5084 /* NHDiscoverHotViewController.m */; };
+		82A6C05D1DD44351002F5084 /* NHDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C05C1DD44351002F5084 /* NHDiscoverTableViewCell.m */; };
+		82A6C0651DD44459002F5084 /* NHDiscoverRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0641DD44459002F5084 /* NHDiscoverRequest.m */; };
+		82A6C0681DD444A5002F5084 /* NHDiscoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0671DD444A5002F5084 /* NHDiscoverHeaderView.m */; };
+		82A6C06B1DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C06A1DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.m */; };
+		82A6C06E1DD44535002F5084 /* NHDiscoverHeaderPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C06D1DD44535002F5084 /* NHDiscoverHeaderPageControl.m */; };
+		82A6C0761DD446C5002F5084 /* NHDiscoverSubScribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0751DD446C5002F5084 /* NHDiscoverSubScribeViewController.m */; };
+		82A6C0791DD446FB002F5084 /* NHDiscoverSubscribeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0781DD446FB002F5084 /* NHDiscoverSubscribeListRequest.m */; };
+		82A6C07C1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C07B1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.m */; };
+		82A6C0821DD44863002F5084 /* NHDiscoverSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0811DD44863002F5084 /* NHDiscoverSearchViewController.m */; };
+		82A6C0851DD448D4002F5084 /* NHDiscoverSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0841DD448D4002F5084 /* NHDiscoverSearchTextField.m */; };
+		82A6C0881DD44939002F5084 /* NHDiscoverSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0871DD44939002F5084 /* NHDiscoverSearchRequest.m */; };
+		82A6C08B1DD44968002F5084 /* NHDiscoverSearchFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C08A1DD44968002F5084 /* NHDiscoverSearchFriendCell.m */; };
+		82A6C08E1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C08D1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.m */; };
+		82A6C0911DD44A4E002F5084 /* NHDiscoverNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0901DD44A4E002F5084 /* NHDiscoverNearByViewController.m */; };
+		82A6C0941DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0931DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.m */; };
+		82A6C0971DD44B5B002F5084 /* NHDiscoverNearByUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0961DD44B5B002F5084 /* NHDiscoverNearByUserModel.m */; };
+		82A6C09A1DD44BA2002F5084 /* NHDiscoverNearByFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0991DD44BA2002F5084 /* NHDiscoverNearByFilterView.m */; };
+		82A6C09D1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C09C1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.m */; };
+		82A6C0A01DD44C71002F5084 /* NHDiscoverNearByRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C09F1DD44C71002F5084 /* NHDiscoverNearByRequest.m */; };
+		82A6C0A31DD44CC8002F5084 /* NHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0A21DD44CC8002F5084 /* NHLocationManager.m */; };
+		82A6C0A81DD44EDF002F5084 /* NHCheckTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0A71DD44EDF002F5084 /* NHCheckTableViewCell.m */; };
+		82A6C0AB1DD44F19002F5084 /* NHCheckViewCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0AA1DD44F19002F5084 /* NHCheckViewCellFrame.m */; };
+		82A6C0AE1DD44F61002F5084 /* NHCheckTableViewProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0AD1DD44F61002F5084 /* NHCheckTableViewProgressBar.m */; };
+		82A6C0B11DD44FB3002F5084 /* NHCheckReportBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0B01DD44FB3002F5084 /* NHCheckReportBottomView.m */; };
+		82A6C0B41DD45002002F5084 /* NHCheckListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0B31DD45002002F5084 /* NHCheckListRequest.m */; };
+		82A6C0B71DD4503D002F5084 /* NHCheckActionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0B61DD4503D002F5084 /* NHCheckActionRequest.m */; };
+		82A6C0BE1DD451DE002F5084 /* NHBlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0BD1DD451DE002F5084 /* NHBlackListViewController.m */; };
+		82A6C0C11DD4521B002F5084 /* NHNeiHanBlackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0C01DD4521B002F5084 /* NHNeiHanBlackRequest.m */; };
+		82A6C0C41DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0C31DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.m */; };
+		82A6C0CB1DD452E4002F5084 /* NHSystemMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0CA1DD452E4002F5084 /* NHSystemMessageViewController.m */; };
+		82A6C0CF1DD45367002F5084 /* NHMessageCoversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0CE1DD45367002F5084 /* NHMessageCoversationViewController.m */; };
+		82A6C0D41DD454BE002F5084 /* cover_kebi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82A6C0D11DD454BE002F5084 /* cover_kebi.jpg */; };
+		82A6C0D51DD454BE002F5084 /* digdownicon_review_press.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82A6C0D21DD454BE002F5084 /* digdownicon_review_press.gif */; };
+		82A6C0D61DD454BE002F5084 /* digupicon_review_press.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82A6C0D31DD454BE002F5084 /* digupicon_review_press.gif */; };
+		82A6C0DA1DD455EE002F5084 /* NHLaunchAdvertiseMentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C0D91DD455EE002F5084 /* NHLaunchAdvertiseMentView.m */; };
 		82CC7B711DD167D000796FD2 /* NHHomeAttentionEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B701DD167D000796FD2 /* NHHomeAttentionEmptyView.m */; };
 		82CC7B741DD19E6000796FD2 /* NHCustomCommonEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B731DD19E6000796FD2 /* NHCustomCommonEmptyView.m */; };
 		82CC7B7A1DD1AA2100796FD2 /* NHUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CC7B791DD1AA2100796FD2 /* NHUserInfoViewController.m */; };
@@ -209,10 +251,10 @@
 		823C603D1DC6F347003C19A8 /* NHHomeAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionViewController.m; sourceTree = "<group>"; };
 		823C60431DC6F423003C19A8 /* NHHomeAttentionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionRequest.h; sourceTree = "<group>"; };
 		823C60441DC6F423003C19A8 /* NHHomeAttentionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionRequest.m; sourceTree = "<group>"; };
-		823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeHeaderOptionalView.h; sourceTree = "<group>"; };
-		823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeHeaderOptionalView.m; sourceTree = "<group>"; };
-		823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeHeaderOptionalViewItemView.h; sourceTree = "<group>"; };
-		823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeHeaderOptionalViewItemView.m; sourceTree = "<group>"; };
+		823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHHomeHeaderOptionalView.h; path = ../Main/NHHomeHeaderOptionalView.h; sourceTree = "<group>"; };
+		823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHHomeHeaderOptionalView.m; path = ../Main/NHHomeHeaderOptionalView.m; sourceTree = "<group>"; };
+		823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHHomeHeaderOptionalViewItemView.h; path = ../Main/NHHomeHeaderOptionalViewItemView.h; sourceTree = "<group>"; };
+		823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHHomeHeaderOptionalViewItemView.m; path = ../Main/NHHomeHeaderOptionalViewItemView.m; sourceTree = "<group>"; };
 		824A6DE91DD2B45F003E647A /* NHPersonalCenterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPersonalCenterRequest.h; sourceTree = "<group>"; };
 		824A6DEA1DD2B45F003E647A /* NHPersonalCenterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPersonalCenterRequest.m; sourceTree = "<group>"; };
 		824A6DF11DD2B674003E647A /* NHDynamicDetailCommentCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDynamicDetailCommentCellFrame.h; sourceTree = "<group>"; };
@@ -276,6 +318,10 @@
 		824A6E521DD3075D003E647A /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
 		824A6E531DD3075D003E647A /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		824A6E541DD3075D003E647A /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		824A6E601DD31F34003E647A /* NHPublishDraftRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishDraftRequest.h; sourceTree = "<group>"; };
+		824A6E611DD31F34003E647A /* NHPublishDraftRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishDraftRequest.m; sourceTree = "<group>"; };
+		824A6E631DD3201F003E647A /* NHCustomTopImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomTopImageButton.h; sourceTree = "<group>"; };
+		824A6E641DD3201F003E647A /* NHCustomTopImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomTopImageButton.m; sourceTree = "<group>"; };
 		8253DB8B1DC1A36900280E57 /* NHRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHRequestManager.h; sourceTree = "<group>"; };
 		8253DB8C1DC1A36900280E57 /* NHRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHRequestManager.m; sourceTree = "<group>"; };
 		8253DB911DC1CC6D00280E57 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
@@ -392,6 +438,83 @@
 		82879EFB1DC19C6700D87620 /* NHBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseRequest.m; sourceTree = "<group>"; };
 		82A293011DCACBFD00C77EAE /* NHBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseTableView.h; sourceTree = "<group>"; };
 		82A293021DCACBFD00C77EAE /* NHBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableView.m; sourceTree = "<group>"; };
+		82A6C0431DD42463002F5084 /* NHPublishSelectDraftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishSelectDraftViewController.h; sourceTree = "<group>"; };
+		82A6C0441DD42463002F5084 /* NHPublishSelectDraftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishSelectDraftViewController.m; sourceTree = "<group>"; };
+		82A6C04A1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishSelectDraftTableViewCell.h; sourceTree = "<group>"; };
+		82A6C04B1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishSelectDraftTableViewCell.m; sourceTree = "<group>"; };
+		82A6C04D1DD42527002F5084 /* NHPublishSelectDraftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishSelectDraftModel.h; sourceTree = "<group>"; };
+		82A6C04E1DD42527002F5084 /* NHPublishSelectDraftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishSelectDraftModel.m; sourceTree = "<group>"; };
+		82A6C0501DD42565002F5084 /* NHPublishSelectDraftRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPublishSelectDraftRequest.h; sourceTree = "<group>"; };
+		82A6C0511DD42565002F5084 /* NHPublishSelectDraftRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPublishSelectDraftRequest.m; sourceTree = "<group>"; };
+		82A6C0581DD442FC002F5084 /* NHDiscoverHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverHotViewController.h; sourceTree = "<group>"; };
+		82A6C0591DD442FC002F5084 /* NHDiscoverHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverHotViewController.m; sourceTree = "<group>"; };
+		82A6C05B1DD44351002F5084 /* NHDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		82A6C05C1DD44351002F5084 /* NHDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverTableViewCell.m; sourceTree = "<group>"; };
+		82A6C0631DD44459002F5084 /* NHDiscoverRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverRequest.h; sourceTree = "<group>"; };
+		82A6C0641DD44459002F5084 /* NHDiscoverRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverRequest.m; sourceTree = "<group>"; };
+		82A6C0661DD444A5002F5084 /* NHDiscoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverHeaderView.h; sourceTree = "<group>"; };
+		82A6C0671DD444A5002F5084 /* NHDiscoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverHeaderView.m; sourceTree = "<group>"; };
+		82A6C0691DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverHeaderViewViewCell.h; sourceTree = "<group>"; };
+		82A6C06A1DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverHeaderViewViewCell.m; sourceTree = "<group>"; };
+		82A6C06C1DD44535002F5084 /* NHDiscoverHeaderPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverHeaderPageControl.h; sourceTree = "<group>"; };
+		82A6C06D1DD44535002F5084 /* NHDiscoverHeaderPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverHeaderPageControl.m; sourceTree = "<group>"; };
+		82A6C0741DD446C5002F5084 /* NHDiscoverSubScribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSubScribeViewController.h; sourceTree = "<group>"; };
+		82A6C0751DD446C5002F5084 /* NHDiscoverSubScribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSubScribeViewController.m; sourceTree = "<group>"; };
+		82A6C0771DD446FB002F5084 /* NHDiscoverSubscribeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSubscribeListRequest.h; sourceTree = "<group>"; };
+		82A6C0781DD446FB002F5084 /* NHDiscoverSubscribeListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSubscribeListRequest.m; sourceTree = "<group>"; };
+		82A6C07A1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSubscribeListTableViewCell.h; sourceTree = "<group>"; };
+		82A6C07B1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSubscribeListTableViewCell.m; sourceTree = "<group>"; };
+		82A6C0801DD44863002F5084 /* NHDiscoverSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchViewController.h; sourceTree = "<group>"; };
+		82A6C0811DD44863002F5084 /* NHDiscoverSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchViewController.m; sourceTree = "<group>"; };
+		82A6C0831DD448D4002F5084 /* NHDiscoverSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchTextField.h; sourceTree = "<group>"; };
+		82A6C0841DD448D4002F5084 /* NHDiscoverSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchTextField.m; sourceTree = "<group>"; };
+		82A6C0861DD44939002F5084 /* NHDiscoverSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchRequest.h; sourceTree = "<group>"; };
+		82A6C0871DD44939002F5084 /* NHDiscoverSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchRequest.m; sourceTree = "<group>"; };
+		82A6C0891DD44968002F5084 /* NHDiscoverSearchFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchFriendCell.h; sourceTree = "<group>"; };
+		82A6C08A1DD44968002F5084 /* NHDiscoverSearchFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchFriendCell.m; sourceTree = "<group>"; };
+		82A6C08C1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverSearchFriendUserCell.h; sourceTree = "<group>"; };
+		82A6C08D1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverSearchFriendUserCell.m; sourceTree = "<group>"; };
+		82A6C08F1DD44A4E002F5084 /* NHDiscoverNearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByViewController.h; sourceTree = "<group>"; };
+		82A6C0901DD44A4E002F5084 /* NHDiscoverNearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByViewController.m; sourceTree = "<group>"; };
+		82A6C0921DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByTableViewCell.h; sourceTree = "<group>"; };
+		82A6C0931DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByTableViewCell.m; sourceTree = "<group>"; };
+		82A6C0951DD44B5B002F5084 /* NHDiscoverNearByUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByUserModel.h; sourceTree = "<group>"; };
+		82A6C0961DD44B5B002F5084 /* NHDiscoverNearByUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByUserModel.m; sourceTree = "<group>"; };
+		82A6C0981DD44BA2002F5084 /* NHDiscoverNearByFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByFilterView.h; sourceTree = "<group>"; };
+		82A6C0991DD44BA2002F5084 /* NHDiscoverNearByFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByFilterView.m; sourceTree = "<group>"; };
+		82A6C09B1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByClearLocationRequest.h; sourceTree = "<group>"; };
+		82A6C09C1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByClearLocationRequest.m; sourceTree = "<group>"; };
+		82A6C09E1DD44C71002F5084 /* NHDiscoverNearByRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverNearByRequest.h; sourceTree = "<group>"; };
+		82A6C09F1DD44C71002F5084 /* NHDiscoverNearByRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverNearByRequest.m; sourceTree = "<group>"; };
+		82A6C0A11DD44CC8002F5084 /* NHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHLocationManager.h; sourceTree = "<group>"; };
+		82A6C0A21DD44CC8002F5084 /* NHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHLocationManager.m; sourceTree = "<group>"; };
+		82A6C0A61DD44EDF002F5084 /* NHCheckTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckTableViewCell.h; sourceTree = "<group>"; };
+		82A6C0A71DD44EDF002F5084 /* NHCheckTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckTableViewCell.m; sourceTree = "<group>"; };
+		82A6C0A91DD44F19002F5084 /* NHCheckViewCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckViewCellFrame.h; sourceTree = "<group>"; };
+		82A6C0AA1DD44F19002F5084 /* NHCheckViewCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckViewCellFrame.m; sourceTree = "<group>"; };
+		82A6C0AC1DD44F61002F5084 /* NHCheckTableViewProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckTableViewProgressBar.h; sourceTree = "<group>"; };
+		82A6C0AD1DD44F61002F5084 /* NHCheckTableViewProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckTableViewProgressBar.m; sourceTree = "<group>"; };
+		82A6C0AF1DD44FB3002F5084 /* NHCheckReportBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckReportBottomView.h; sourceTree = "<group>"; };
+		82A6C0B01DD44FB3002F5084 /* NHCheckReportBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckReportBottomView.m; sourceTree = "<group>"; };
+		82A6C0B21DD45002002F5084 /* NHCheckListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckListRequest.h; sourceTree = "<group>"; };
+		82A6C0B31DD45002002F5084 /* NHCheckListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckListRequest.m; sourceTree = "<group>"; };
+		82A6C0B51DD4503D002F5084 /* NHCheckActionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCheckActionRequest.h; sourceTree = "<group>"; };
+		82A6C0B61DD4503D002F5084 /* NHCheckActionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCheckActionRequest.m; sourceTree = "<group>"; };
+		82A6C0BC1DD451DE002F5084 /* NHBlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBlackListViewController.h; sourceTree = "<group>"; };
+		82A6C0BD1DD451DE002F5084 /* NHBlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBlackListViewController.m; sourceTree = "<group>"; };
+		82A6C0BF1DD4521B002F5084 /* NHNeiHanBlackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHNeiHanBlackRequest.h; sourceTree = "<group>"; };
+		82A6C0C01DD4521B002F5084 /* NHNeiHanBlackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHNeiHanBlackRequest.m; sourceTree = "<group>"; };
+		82A6C0C21DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHNeiHanBlackListTableViewCell.h; sourceTree = "<group>"; };
+		82A6C0C31DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHNeiHanBlackListTableViewCell.m; sourceTree = "<group>"; };
+		82A6C0C91DD452E4002F5084 /* NHSystemMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHSystemMessageViewController.h; sourceTree = "<group>"; };
+		82A6C0CA1DD452E4002F5084 /* NHSystemMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHSystemMessageViewController.m; sourceTree = "<group>"; };
+		82A6C0CD1DD45367002F5084 /* NHMessageCoversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMessageCoversationViewController.h; sourceTree = "<group>"; };
+		82A6C0CE1DD45367002F5084 /* NHMessageCoversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMessageCoversationViewController.m; sourceTree = "<group>"; };
+		82A6C0D11DD454BE002F5084 /* cover_kebi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover_kebi.jpg; sourceTree = "<group>"; };
+		82A6C0D21DD454BE002F5084 /* digdownicon_review_press.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = digdownicon_review_press.gif; sourceTree = "<group>"; };
+		82A6C0D31DD454BE002F5084 /* digupicon_review_press.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = digupicon_review_press.gif; sourceTree = "<group>"; };
+		82A6C0D81DD455EE002F5084 /* NHLaunchAdvertiseMentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHLaunchAdvertiseMentView.h; sourceTree = "<group>"; };
+		82A6C0D91DD455EE002F5084 /* NHLaunchAdvertiseMentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHLaunchAdvertiseMentView.m; sourceTree = "<group>"; };
 		82CC7B6F1DD167D000796FD2 /* NHHomeAttentionEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeAttentionEmptyView.h; sourceTree = "<group>"; };
 		82CC7B701DD167D000796FD2 /* NHHomeAttentionEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeAttentionEmptyView.m; sourceTree = "<group>"; };
 		82CC7B721DD19E6000796FD2 /* NHCustomCommonEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomCommonEmptyView.h; sourceTree = "<group>"; };
@@ -552,6 +675,10 @@
 		8233EF0E1DD072C40054AE13 /* Select */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0491DD42493002F5084 /* Controller */,
+				82A6C0481DD42491002F5084 /* Model */,
+				82A6C0471DD4248E002F5084 /* View */,
+				82A6C0461DD4248C002F5084 /* Request */,
 			);
 			name = Select;
 			sourceTree = "<group>";
@@ -585,6 +712,8 @@
 		8233EF111DD0730C0054AE13 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				824A6E601DD31F34003E647A /* NHPublishDraftRequest.h */,
+				824A6E611DD31F34003E647A /* NHPublishDraftRequest.m */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -681,10 +810,6 @@
 		823C60471DC714E5003C19A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */,
-				823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */,
-				823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */,
-				823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -821,6 +946,12 @@
 		824A6E161DD2F1A4003E647A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0661DD444A5002F5084 /* NHDiscoverHeaderView.h */,
+				82A6C0671DD444A5002F5084 /* NHDiscoverHeaderView.m */,
+				82A6C0691DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.h */,
+				82A6C06A1DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.m */,
+				82A6C06C1DD44535002F5084 /* NHDiscoverHeaderPageControl.h */,
+				82A6C06D1DD44535002F5084 /* NHDiscoverHeaderPageControl.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -828,6 +959,10 @@
 		824A6E1A1DD2F565003E647A /* Black */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0BB1DD45151002F5084 /* Model */,
+				82A6C0BA1DD4514E002F5084 /* Controller */,
+				82A6C0B91DD4514C002F5084 /* View */,
+				82A6C0B81DD4514A002F5084 /* Request */,
 			);
 			name = Black;
 			sourceTree = "<group>";
@@ -835,6 +970,7 @@
 		824A6E1B1DD2F572003E647A /* Coversation */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0CC1DD4534E002F5084 /* Controller */,
 			);
 			name = Coversation;
 			sourceTree = "<group>";
@@ -842,6 +978,10 @@
 		824A6E1C1DD2F585003E647A /* SystemMessage */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0C81DD452B5002F5084 /* Controller */,
+				82A6C0C71DD452B2002F5084 /* View */,
+				82A6C0C61DD452B0002F5084 /* Model */,
+				82A6C0C51DD452AC002F5084 /* Request */,
 			);
 			name = SystemMessage;
 			sourceTree = "<group>";
@@ -1020,8 +1160,6 @@
 				8253DBD21DC1E0C800280E57 /* NHBaseModel.m */,
 				8253DBDB1DC1E75600280E57 /* NHNeiHanUserInfoModel.h */,
 				8253DBDC1DC1E75600280E57 /* NHNeiHanUserInfoModel.m */,
-				8253DBE61DC1FF3100280E57 /* NHBaseViewController.h */,
-				8253DBE71DC1FF3100280E57 /* NHBaseViewController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1051,6 +1189,8 @@
 		8253DBE21DC1EA7300280E57 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				824A6E631DD3201F003E647A /* NHCustomTopImageButton.h */,
+				824A6E641DD3201F003E647A /* NHCustomTopImageButton.m */,
 				8253DBE31DC1EA9300280E57 /* NHRefreshFooter.h */,
 				8253DBE41DC1EA9300280E57 /* NHRefreshFooter.m */,
 				827196DB1DC3344B00B8EAB9 /* NHCustomNoNetworkEmptyView.h */,
@@ -1188,6 +1328,8 @@
 		82879EDC1DC18F5B00D87620 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8253DBE61DC1FF3100280E57 /* NHBaseViewController.h */,
+				8253DBE71DC1FF3100280E57 /* NHBaseViewController.m */,
 				82E755211DC8733000324786 /* NHBaseTableViewController.h */,
 				82E755221DC8733000324786 /* NHBaseTableViewController.m */,
 				82879EDD1DC18F7D00D87620 /* NHBaseNavigationViewController.h */,
@@ -1199,7 +1341,10 @@
 		82879EEC1DC19AF300D87620 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				82879EF01DC19B2700D87620 /* New Group */,
+				82A6C0A51DD44E9B002F5084 /* Request */,
+				82A6C0A41DD44E93002F5084 /* View */,
+				82879EF11DC19B2C00D87620 /* Controller */,
+				82879EF01DC19B2700D87620 /* Model */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1234,12 +1379,13 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		82879EF01DC19B2700D87620 /* New Group */ = {
+		82879EF01DC19B2700D87620 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				82879EF11DC19B2C00D87620 /* Controller */,
+				82A6C0A91DD44F19002F5084 /* NHCheckViewCellFrame.h */,
+				82A6C0AA1DD44F19002F5084 /* NHCheckViewCellFrame.m */,
 			);
-			name = "New Group";
+			name = Model;
 			sourceTree = "<group>";
 		};
 		82879EF11DC19B2C00D87620 /* Controller */ = {
@@ -1296,6 +1442,330 @@
 				82879EFB1DC19C6700D87620 /* NHBaseRequest.m */,
 			);
 			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0461DD4248C002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0501DD42565002F5084 /* NHPublishSelectDraftRequest.h */,
+				82A6C0511DD42565002F5084 /* NHPublishSelectDraftRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0471DD4248E002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C04A1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.h */,
+				82A6C04B1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0481DD42491002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C04D1DD42527002F5084 /* NHPublishSelectDraftModel.h */,
+				82A6C04E1DD42527002F5084 /* NHPublishSelectDraftModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C0491DD42493002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0431DD42463002F5084 /* NHPublishSelectDraftViewController.h */,
+				82A6C0441DD42463002F5084 /* NHPublishSelectDraftViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0531DD44299002F5084 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0571DD442AD002F5084 /* Model */,
+				82A6C0561DD442AA002F5084 /* Controller */,
+				82A6C0551DD442A7002F5084 /* View */,
+				82A6C0541DD442A4002F5084 /* Request */,
+			);
+			name = Hot;
+			sourceTree = "<group>";
+		};
+		82A6C0541DD442A4002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0551DD442A7002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C05B1DD44351002F5084 /* NHDiscoverTableViewCell.h */,
+				82A6C05C1DD44351002F5084 /* NHDiscoverTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0561DD442AA002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0581DD442FC002F5084 /* NHDiscoverHotViewController.h */,
+				82A6C0591DD442FC002F5084 /* NHDiscoverHotViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0571DD442AD002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C05E1DD443EB002F5084 /* NearBy */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0621DD44402002F5084 /* Controller */,
+				82A6C0611DD44400002F5084 /* Model */,
+				82A6C0601DD443FD002F5084 /* View */,
+				82A6C05F1DD443FA002F5084 /* Request */,
+			);
+			name = NearBy;
+			sourceTree = "<group>";
+		};
+		82A6C05F1DD443FA002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C09B1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.h */,
+				82A6C09C1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.m */,
+				82A6C09E1DD44C71002F5084 /* NHDiscoverNearByRequest.h */,
+				82A6C09F1DD44C71002F5084 /* NHDiscoverNearByRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0601DD443FD002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0921DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.h */,
+				82A6C0931DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.m */,
+				82A6C0981DD44BA2002F5084 /* NHDiscoverNearByFilterView.h */,
+				82A6C0991DD44BA2002F5084 /* NHDiscoverNearByFilterView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0611DD44400002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0631DD44459002F5084 /* NHDiscoverRequest.h */,
+				82A6C0641DD44459002F5084 /* NHDiscoverRequest.m */,
+				82A6C0951DD44B5B002F5084 /* NHDiscoverNearByUserModel.h */,
+				82A6C0961DD44B5B002F5084 /* NHDiscoverNearByUserModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C0621DD44402002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C08F1DD44A4E002F5084 /* NHDiscoverNearByViewController.h */,
+				82A6C0901DD44A4E002F5084 /* NHDiscoverNearByViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C06F1DD44662002F5084 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0731DD4468B002F5084 /* Model */,
+				82A6C0721DD44689002F5084 /* View */,
+				82A6C0711DD44686002F5084 /* Controller */,
+				82A6C0701DD44682002F5084 /* Request */,
+			);
+			name = Subscribe;
+			sourceTree = "<group>";
+		};
+		82A6C0701DD44682002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0771DD446FB002F5084 /* NHDiscoverSubscribeListRequest.h */,
+				82A6C0781DD446FB002F5084 /* NHDiscoverSubscribeListRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0711DD44686002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0741DD446C5002F5084 /* NHDiscoverSubScribeViewController.h */,
+				82A6C0751DD446C5002F5084 /* NHDiscoverSubScribeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0721DD44689002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C07A1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.h */,
+				82A6C07B1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0731DD4468B002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C07D1DD44822002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0861DD44939002F5084 /* NHDiscoverSearchRequest.h */,
+				82A6C0871DD44939002F5084 /* NHDiscoverSearchRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C07E1DD44825002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0831DD448D4002F5084 /* NHDiscoverSearchTextField.h */,
+				82A6C0841DD448D4002F5084 /* NHDiscoverSearchTextField.m */,
+				82A6C0891DD44968002F5084 /* NHDiscoverSearchFriendCell.h */,
+				82A6C08A1DD44968002F5084 /* NHDiscoverSearchFriendCell.m */,
+				82A6C08C1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.h */,
+				82A6C08D1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C07F1DD44828002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0801DD44863002F5084 /* NHDiscoverSearchViewController.h */,
+				82A6C0811DD44863002F5084 /* NHDiscoverSearchViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0A41DD44E93002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0A61DD44EDF002F5084 /* NHCheckTableViewCell.h */,
+				82A6C0A71DD44EDF002F5084 /* NHCheckTableViewCell.m */,
+				82A6C0AC1DD44F61002F5084 /* NHCheckTableViewProgressBar.h */,
+				82A6C0AD1DD44F61002F5084 /* NHCheckTableViewProgressBar.m */,
+				82A6C0AF1DD44FB3002F5084 /* NHCheckReportBottomView.h */,
+				82A6C0B01DD44FB3002F5084 /* NHCheckReportBottomView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0A51DD44E9B002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0B21DD45002002F5084 /* NHCheckListRequest.h */,
+				82A6C0B31DD45002002F5084 /* NHCheckListRequest.m */,
+				82A6C0B51DD4503D002F5084 /* NHCheckActionRequest.h */,
+				82A6C0B61DD4503D002F5084 /* NHCheckActionRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0B81DD4514A002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0BF1DD4521B002F5084 /* NHNeiHanBlackRequest.h */,
+				82A6C0C01DD4521B002F5084 /* NHNeiHanBlackRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0B91DD4514C002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0C21DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.h */,
+				82A6C0C31DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0BA1DD4514E002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0BC1DD451DE002F5084 /* NHBlackListViewController.h */,
+				82A6C0BD1DD451DE002F5084 /* NHBlackListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0BB1DD45151002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C0C51DD452AC002F5084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		82A6C0C61DD452B0002F5084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82A6C0C71DD452B2002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82A6C0C81DD452B5002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0C91DD452E4002F5084 /* NHSystemMessageViewController.h */,
+				82A6C0CA1DD452E4002F5084 /* NHSystemMessageViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0CC1DD4534E002F5084 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0CD1DD45367002F5084 /* NHMessageCoversationViewController.h */,
+				82A6C0CE1DD45367002F5084 /* NHMessageCoversationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		82A6C0D01DD45496002F5084 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0D11DD454BE002F5084 /* cover_kebi.jpg */,
+				82A6C0D21DD454BE002F5084 /* digdownicon_review_press.gif */,
+				82A6C0D31DD454BE002F5084 /* digupicon_review_press.gif */,
+			);
+			name = "Resource(资源)";
+			sourceTree = "<group>";
+		};
+		82A6C0D71DD455D9002F5084 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C0D81DD455EE002F5084 /* NHLaunchAdvertiseMentView.h */,
+				82A6C0D91DD455EE002F5084 /* NHLaunchAdvertiseMentView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		82CC7B751DD1A8B400796FD2 /* UserInfo */ = {
@@ -1443,6 +1913,7 @@
 		82DD989D1DC08F5D00982DFD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0D71DD455D9002F5084 /* View */,
 				82DD986C1DC04CC300982DFD /* AppDelegate.h */,
 				82DD986D1DC04CC300982DFD /* AppDelegate.m */,
 			);
@@ -1471,6 +1942,9 @@
 		82DD98A01DC08F5D00982DFD /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C06F1DD44662002F5084 /* Subscribe */,
+				82A6C05E1DD443EB002F5084 /* NearBy */,
+				82A6C0531DD44299002F5084 /* Hot */,
 				8233EEF71DD026BF0054AE13 /* Topic */,
 				82F695751DCC6FD200EC4F67 /* Search */,
 				82879EED1DC19B0200D87620 /* Main */,
@@ -1524,6 +1998,7 @@
 		82DD98A51DC08F5D00982DFD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C0D01DD45496002F5084 /* Resource(资源) */,
 				8253DBE11DC1EA4E00280E57 /* Custom */,
 				8253DB8E1DC1CC5B00280E57 /* Category */,
 				82879ED31DC18AC700D87620 /* Vendor */,
@@ -1571,6 +2046,8 @@
 				8253DBCE1DC1DE2C00280E57 /* NHCommonAPIConstant.m */,
 				82E3B1931DC9C4F400198846 /* NHAnimationManager.h */,
 				82E3B1941DC9C4F400198846 /* NHAnimationManager.m */,
+				82A6C0A11DD44CC8002F5084 /* NHLocationManager.h */,
+				82A6C0A21DD44CC8002F5084 /* NHLocationManager.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -1593,6 +2070,10 @@
 		82E755281DC88BC100324786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				823C604B1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.h */,
+				823C604C1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m */,
+				823C60481DC714F8003C19A8 /* NHHomeHeaderOptionalView.h */,
+				823C60491DC714F8003C19A8 /* NHHomeHeaderOptionalView.m */,
 				82E755291DC88BFB00324786 /* NHHomeUserIconView.h */,
 				82E7552A1DC88BFB00324786 /* NHHomeUserIconView.m */,
 				820A0FB11DCC1DE7005F1486 /* NHHomeTableViewCell.h */,
@@ -1614,6 +2095,9 @@
 		82F695751DCC6FD200EC4F67 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				82A6C07F1DD44828002F5084 /* Controller */,
+				82A6C07E1DD44825002F5084 /* View */,
+				82A6C07D1DD44822002F5084 /* Request */,
 				82F695761DCC6FDE00EC4F67 /* Model */,
 			);
 			name = Search;
@@ -1763,7 +2247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A6C0D41DD454BE002F5084 /* cover_kebi.jpg in Resources */,
 				820A0FC51DCC5C34005F1486 /* WMPlayer.bundle in Resources */,
+				82A6C0D51DD454BE002F5084 /* digdownicon_review_press.gif in Resources */,
+				82A6C0D61DD454BE002F5084 /* digupicon_review_press.gif in Resources */,
 				82DD98791DC04CC300982DFD /* LaunchScreen.storyboard in Resources */,
 				82DD98761DC04CC300982DFD /* Assets.xcassets in Resources */,
 				824A6E591DD3075D003E647A /* TZImagePickerController.bundle in Resources */,
@@ -1845,18 +2332,25 @@
 				824A6DF31DD2B674003E647A /* NHDynamicDetailCommentCellFrame.m in Sources */,
 				827197181DC345F400B8EAB9 /* UIView+Tap.m in Sources */,
 				82E3B1921DC9B51300198846 /* FXBlurView.m in Sources */,
+				82A6C0A31DD44CC8002F5084 /* NHLocationManager.m in Sources */,
 				824A6E261DD2F7EC003E647A /* NHHomeAttentionListViewController.m in Sources */,
 				8253DBBA1DC1CC6D00280E57 /* NSDictionary+Addition.m in Sources */,
 				824A6DF91DD2B8E6003E647A /* NHDynamicDetailViewController.m in Sources */,
+				82A6C0C11DD4521B002F5084 /* NHNeiHanBlackRequest.m in Sources */,
 				82879EDA1DC18C3500D87620 /* NHMainTabbarViewController.m in Sources */,
+				82A6C0681DD444A5002F5084 /* NHDiscoverHeaderView.m in Sources */,
 				82E755231DC8733000324786 /* NHBaseTableViewController.m in Sources */,
+				82A6C09A1DD44BA2002F5084 /* NHDiscoverNearByFilterView.m in Sources */,
+				82A6C0B71DD4503D002F5084 /* NHCheckActionRequest.m in Sources */,
 				82879EE51DC1968F00D87620 /* NHDiscoverViewController.m in Sources */,
 				8233EEF61DD0090E0054AE13 /* NHCustomActionSheet.m in Sources */,
 				824A6E5C1DD3075D003E647A /* TZPhotoPreviewCell.m in Sources */,
 				827197191DC345F400B8EAB9 /* UIViewController+Addition.m in Sources */,
+				82A6C04F1DD42527002F5084 /* NHPublishSelectDraftModel.m in Sources */,
 				82F695971DCC817900EC4F67 /* MJPhotoLoadingView.m in Sources */,
 				8253DBB91DC1CC6D00280E57 /* NSDate+Addition.m in Sources */,
 				823C603E1DC6F347003C19A8 /* NHHomeAttentionViewController.m in Sources */,
+				82A6C08B1DD44968002F5084 /* NHDiscoverSearchFriendCell.m in Sources */,
 				8271970C1DC345F400B8EAB9 /* UILabel+CountDown.m in Sources */,
 				8253DBC51DC1CC6D00280E57 /* NSString+Size.m in Sources */,
 				824A6E5E1DD3075D003E647A /* TZVideoPlayerController.m in Sources */,
@@ -1879,8 +2373,11 @@
 				82F6959A1DCC817900EC4F67 /* MJPhotoView.m in Sources */,
 				824A6E3E1DD3061E003E647A /* NHPublishDraftTopView.m in Sources */,
 				8253DBDD1DC1E75600280E57 /* NHNeiHanUserInfoModel.m in Sources */,
+				82A6C05A1DD442FC002F5084 /* NHDiscoverHotViewController.m in Sources */,
 				8253DBE51DC1EA9300280E57 /* NHRefreshFooter.m in Sources */,
+				82A6C0CB1DD452E4002F5084 /* NHSystemMessageViewController.m in Sources */,
 				824A6DEB1DD2B45F003E647A /* NHPersonalCenterRequest.m in Sources */,
+				82A6C0821DD44863002F5084 /* NHDiscoverSearchViewController.m in Sources */,
 				8253DBBB1DC1CC6D00280E57 /* NSFileManager+Paths.m in Sources */,
 				824A6DFC1DD2C666003E647A /* NHDynamicDetailRequest.m in Sources */,
 				8253DBC41DC1CC6D00280E57 /* NSString+Extension.m in Sources */,
@@ -1892,11 +2389,15 @@
 				824A6E3C1DD3061E003E647A /* NHPublishDraftPictureCollectionViewCell.m in Sources */,
 				820A0FC91DCC5DC2005F1486 /* NHHomeTopTipView.m in Sources */,
 				823C603A1DC6D6FE003C19A8 /* NHCustomSlideViewController.m in Sources */,
+				82A6C0761DD446C5002F5084 /* NHDiscoverSubScribeViewController.m in Sources */,
 				824A6E041DD2D027003E647A /* NHDynamicDetailReportViewController.m in Sources */,
 				824A6E561DD3075D003E647A /* TZAssetCell.m in Sources */,
+				824A6E651DD3201F003E647A /* NHCustomTopImageButton.m in Sources */,
 				8233EEFA1DD026F20054AE13 /* NHDiscoverTopicViewController.m in Sources */,
+				82A6C0BE1DD451DE002F5084 /* NHBlackListViewController.m in Sources */,
 				8253DBD71DC1E13A00280E57 /* NHServiceListModel.m in Sources */,
 				824A6E071DD2D0C1003E647A /* NHDynamicDetailReportRequest.m in Sources */,
+				82A6C06E1DD44535002F5084 /* NHDiscoverHeaderPageControl.m in Sources */,
 				824A6E191DD2F248003E647A /* NHDiscoverModel.m in Sources */,
 				8233EF161DD0735F0054AE13 /* NHPublishDraftViewController.m in Sources */,
 				8253DBC21DC1CC6D00280E57 /* NSString+Addition.m in Sources */,
@@ -1904,11 +2405,15 @@
 				827196E01DC33E2700B8EAB9 /* NHCustomLoadingAnimationView.m in Sources */,
 				824A6E321DD2FB11003E647A /* NHFansAttentionHeaderOptionalView.m in Sources */,
 				827197101DC345F400B8EAB9 /* UIImageView+Addition.m in Sources */,
+				82A6C0DA1DD455EE002F5084 /* NHLaunchAdvertiseMentView.m in Sources */,
 				824A6E0D1DD2EEA0003E647A /* NHHomeAttentionListSectionHeaderView.m in Sources */,
 				82DD98711DC04CC300982DFD /* ViewController.m in Sources */,
+				82A6C06B1DD444E7002F5084 /* NHDiscoverHeaderViewViewCell.m in Sources */,
 				82CC7B711DD167D000796FD2 /* NHHomeAttentionEmptyView.m in Sources */,
 				8253DBBE1DC1CC6D00280E57 /* NSObject+AutoCoding.m in Sources */,
 				8271971A1DC345F400B8EAB9 /* UIViewController+Loading.m in Sources */,
+				82A6C0851DD448D4002F5084 /* NHDiscoverSearchTextField.m in Sources */,
+				82A6C05D1DD44351002F5084 /* NHDiscoverTableViewCell.m in Sources */,
 				827197121DC345F400B8EAB9 /* UINavigationBar+Addition.m in Sources */,
 				8253DBC31DC1CC6D00280E57 /* NSString+Encrypt.m in Sources */,
 				82879EE81DC1969900D87620 /* NHCheckViewController.m in Sources */,
@@ -1917,7 +2422,10 @@
 				8253DBE01DC1E7A500280E57 /* NHFileCacheManager.m in Sources */,
 				8271970F1DC345F400B8EAB9 /* UIImage+ImageEffects.m in Sources */,
 				8253DBCF1DC1DE2C00280E57 /* NHCommonAPIConstant.m in Sources */,
+				82A6C0791DD446FB002F5084 /* NHDiscoverSubscribeListRequest.m in Sources */,
 				82CC7B7A1DD1AA2100796FD2 /* NHUserInfoViewController.m in Sources */,
+				82A6C0AB1DD44F19002F5084 /* NHCheckViewCellFrame.m in Sources */,
+				82A6C0A01DD44C71002F5084 /* NHDiscoverNearByRequest.m in Sources */,
 				823C604D1DC7179C003C19A8 /* NHHomeHeaderOptionalViewItemView.m in Sources */,
 				824A6E551DD3075D003E647A /* NSBundle+TZImagePicker.m in Sources */,
 				8271970E1DC345F400B8EAB9 /* UIImage+Cut.m in Sources */,
@@ -1926,20 +2434,28 @@
 				824A6E131DD2F125003E647A /* NHDiscoverTopicRequest.m in Sources */,
 				8253DBC01DC1CC6D00280E57 /* NSObject+Runtime.m in Sources */,
 				82CC7B8B1DD1CB9200796FD2 /* NHBaseTableHeaderFooterView.m in Sources */,
+				82A6C0B41DD45002002F5084 /* NHCheckListRequest.m in Sources */,
+				82A6C09D1DD44C3B002F5084 /* NHDiscoverNearByClearLocationRequest.m in Sources */,
 				82F6957C1DCC707500EC4F67 /* NHHomeTableViewCellGifImageView.m in Sources */,
+				82A6C0A81DD44EDF002F5084 /* NHCheckTableViewCell.m in Sources */,
 				82F695941DCC817900EC4F67 /* MJPhoto.m in Sources */,
 				82CC7B881DD1CA7F00796FD2 /* NHPersonalCenterSectionHeaderView.m in Sources */,
+				82A6C0CF1DD45367002F5084 /* NHMessageCoversationViewController.m in Sources */,
 				820A0FB31DCC1DE7005F1486 /* NHHomeTableViewCell.m in Sources */,
 				827197131DC345F400B8EAB9 /* UINavigationItem+NHAddition.m in Sources */,
+				82A6C0651DD44459002F5084 /* NHDiscoverRequest.m in Sources */,
 				823C60451DC6F423003C19A8 /* NHHomeAttentionRequest.m in Sources */,
 				824A6E3D1DD3061E003E647A /* NHPublishDraftPictureView.m in Sources */,
 				8253DBBF1DC1CC6D00280E57 /* NSObject+GCD.m in Sources */,
+				82A6C0521DD42565002F5084 /* NHPublishSelectDraftRequest.m in Sources */,
 				82F695961DCC817900EC4F67 /* MJPhotoBrowser.m in Sources */,
 				820A0FB61DCC27D8005F1486 /* NHHomeTableViewCellFrame.m in Sources */,
 				8253DB8D1DC1A36900280E57 /* NHRequestManager.m in Sources */,
+				82A6C0B11DD44FB3002F5084 /* NHCheckReportBottomView.m in Sources */,
 				82F695821DCC713C00EC4F67 /* NHCustomGifImageView.m in Sources */,
 				82CC7B741DD19E6000796FD2 /* NHCustomCommonEmptyView.m in Sources */,
 				82E3B1951DC9C4F400198846 /* NHAnimationManager.m in Sources */,
+				82A6C0881DD44939002F5084 /* NHDiscoverSearchRequest.m in Sources */,
 				827197151DC345F400B8EAB9 /* UILabel+Addition.m in Sources */,
 				82CC7B811DD1B73300796FD2 /* NHPersonalCenterHeaderView.m in Sources */,
 				8253DBC61DC1CC6D00280E57 /* NSString+URL.m in Sources */,
@@ -1957,6 +2473,7 @@
 				82E7552B1DC88BFB00324786 /* NHHomeUserIconView.m in Sources */,
 				8253DBD31DC1E0C800280E57 /* NHBaseModel.m in Sources */,
 				8253DBBC1DC1CC6D00280E57 /* NSObject+AddProperty.m in Sources */,
+				82A6C08E1DD449DB002F5084 /* NHDiscoverSearchFriendUserCell.m in Sources */,
 				820A0FC01DCC59A5005F1486 /* NHHomeListRequest.m in Sources */,
 				827197201DC34CBF00B8EAB9 /* NHCustomSegmentView.m in Sources */,
 				82E755201DC872C700324786 /* NHHomeBaseViewController.m in Sources */,
@@ -1964,11 +2481,17 @@
 				82879EDF1DC18F7D00D87620 /* NHBaseNavigationViewController.m in Sources */,
 				82CC7B851DD1C8D600796FD2 /* NHPersonalCenterHeaderCountView.m in Sources */,
 				82DD986B1DC04CC300982DFD /* main.m in Sources */,
+				82A6C0451DD42463002F5084 /* NHPublishSelectDraftViewController.m in Sources */,
 				827197161DC345F400B8EAB9 /* UIView+Frame.m in Sources */,
 				82879EE21DC1967F00D87620 /* NHHomeViewController.m in Sources */,
+				82A6C0911DD44A4E002F5084 /* NHDiscoverNearByViewController.m in Sources */,
 				8271970A1DC345F400B8EAB9 /* UIBarButtonItem+Addition.m in Sources */,
 				82E3B18F1DC9930600198846 /* NHCustomAlertView.m in Sources */,
+				82A6C0AE1DD44F61002F5084 /* NHCheckTableViewProgressBar.m in Sources */,
+				82A6C04C1DD424E1002F5084 /* NHPublishSelectDraftTableViewCell.m in Sources */,
+				824A6E621DD31F34003E647A /* NHPublishDraftRequest.m in Sources */,
 				827197111DC345F400B8EAB9 /* UIImageView+LBBlurredImage.m in Sources */,
+				82A6C0C41DD4524D002F5084 /* NHNeiHanBlackListTableViewCell.m in Sources */,
 				824A6E571DD3075D003E647A /* TZAssetModel.m in Sources */,
 				82E755271DC874D300324786 /* NHBaseTableViewCell.m in Sources */,
 				8271970B1DC345F400B8EAB9 /* UIButton+Addition.m in Sources */,
@@ -1977,7 +2500,10 @@
 				8233EEFE1DD027F70054AE13 /* NHHomeDynamicRequest.m in Sources */,
 				8253DBB81DC1CC6D00280E57 /* NSArray+Addition.m in Sources */,
 				824A6E5F1DD3075D003E647A /* UIView+Layout.m in Sources */,
+				82A6C0971DD44B5B002F5084 /* NHDiscoverNearByUserModel.m in Sources */,
 				824A6E2C1DD2F922003E647A /* NHHomeAttentionListRequest.m in Sources */,
+				82A6C07C1DD447BD002F5084 /* NHDiscoverSubscribeListTableViewCell.m in Sources */,
+				82A6C0941DD44AF9002F5084 /* NHDiscoverNearByTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2117,12 +2643,14 @@
 			baseConfigurationReference = E619FD40D0C2844BA7B9619F /* Pods-NhDuanzi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NhDuanzi/Other",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NhDuanzi/NDPrefixHeader.pch";
 				INFOPLIST_FILE = NhDuanzi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ews.NhDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2135,12 +2663,14 @@
 			baseConfigurationReference = BF403E81BC38C98EE43CC916 /* Pods-NhDuanzi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NhDuanzi/Other",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NhDuanzi/NDPrefixHeader.pch";
 				INFOPLIST_FILE = NhDuanzi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ews.NhDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
