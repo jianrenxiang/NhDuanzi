@@ -61,6 +61,7 @@
 }
 
 -(void)addChildViewControllerWithClassname:(NSString*)classname imagename:(NSString*)imagename title:(NSString*)title{
+    //动态加载控制器
     UIViewController *vc=[[NSClassFromString(classname) alloc]init];
     NHBaseNavigationViewController *nav=[[NHBaseNavigationViewController alloc]initWithRootViewController:vc];
     nav.tabBarItem.title=title;

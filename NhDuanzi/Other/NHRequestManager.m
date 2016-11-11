@@ -17,6 +17,7 @@
     static dispatch_once_t oneToken;
     dispatch_once(&oneToken, ^{
         _instnace=[AFHTTPSessionManager manager];
+//        配置请求类型，这个和服务器有关
         _instnace.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:@"application/json",@"text/plain", @"text/json", @"text/javascript", @"text/html", nil];
     });
     return _instnace;

@@ -120,9 +120,9 @@
     params[@"aid"] = @"7";
     params[@"count"] = @"50";
     params[@"max_time"] = [NSString stringWithFormat:@"%.2f", [[NSDate date] timeIntervalSince1970]];
-    
+    //合并两个字典
     [params addEntriesFromDictionary:self.mj_keyValues];
-    
+//    是否包含某个类
     if ([params.allKeys containsObject:@"nh_delegate"]) {
         [params removeObjectForKey:@"nh_delegate"];
     }

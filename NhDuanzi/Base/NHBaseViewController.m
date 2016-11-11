@@ -124,7 +124,7 @@
 
 }
 
-
+//没有网络
 -(NHCustomNoNetworkEmptyView*)noNetworkEmpyView{
     if (_noNetworkEmpyView) {
         NHCustomNoNetworkEmptyView *empty=[[NHCustomNoNetworkEmptyView alloc]init];

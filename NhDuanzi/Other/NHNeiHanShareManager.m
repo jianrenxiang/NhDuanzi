@@ -25,14 +25,16 @@ static NHNeiHanShareManager *_singleton=nil;
     });
     return _singleton;
 }
-
+//分享空间的，要加类型
 -(void)shareWithSharedType:(NHNeiHanShareType)shareType image:(UIImage*)image url:(NSString*)url content:(NSString*)content controller:(UIViewController*)controller;{
     switch (shareType) {
         case NHNeiHanShareTypeWechatSession:{
             if ([WXApi isWXAppInstalled]) {
                 return;
             }
+//            分享到微信，qq，调整um url
             UMSocialUrlResource *resoure=[[UMSocialUrlResource alloc]initWithSnsResourceType:UMSocialUrlResourceTypeDefault url:@"http://www.jianshu.com/users/3930920b505b/latest_articles"];
+//            分享url
             [[UMSocialDataService defaultDataService]postSNSWithTypes:@[UMShareToWechatSession] content:content image:[UIImage imageNamed:@"digupicon_review_press_1"]  location:nil urlResource:resoure presentedController:controller completion:^(UMSocialResponseEntity *response) {
                 if (response.responseCode==UMSResponseCodeSuccess) {
                     [self shareSucceed];
@@ -44,6 +46,7 @@ static NHNeiHanShareManager *_singleton=nil;
             if (![WXApi isWXAppInstalled]) {
                 return;
             }
+
             [UMSocialData defaultData].extConfig.wxMessageType=UMSocialWXMessageTypeImage;
             UMSocialUrlResource *resoure=[[UMSocialUrlResource alloc]initWithSnsResourceType:UMSocialUrlResourceTypeDefault url:url];
             [[UMSocialDataService defaultDataService]postSNSWithTypes:@[UMShareToWechatTimeline] content:content image:image location:nil urlResource:resoure presentedController:controller completion:^(UMSocialResponseEntity *response) {
@@ -69,6 +72,7 @@ static NHNeiHanShareManager *_singleton=nil;
             if (![TencentApiInterface isTencentAppInstall:kIphoneQQ]) {
                 return;
             }
+            
             [UMSocialData defaultData].extConfig.qqData.qqMessageType=UMSocialQQMessageTypeImage;
             UMSocialUrlResource *resoure=[[UMSocialUrlResource alloc]initWithSnsResourceType:UMSocialUrlResourceTypeDefault url:url];
             [[UMSocialDataService defaultDataService]postSNSWithTypes:@[UMShareToQQ] content:content image:image location:nil urlResource:resoure presentedController:controller completion:^(UMSocialResponseEntity *response) {
